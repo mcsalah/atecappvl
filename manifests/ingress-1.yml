@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "admcluster-226c"
+    labels:
+        app: "admcluster-226c"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: admclusteraf34-admcluster-226c.92284d6393014cb0ae43.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "admcluster-226c"
+                servicePort: 80
