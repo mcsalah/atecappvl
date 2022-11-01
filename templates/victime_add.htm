@@ -1,0 +1,711 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel Victime add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>رجوع إلى القائمة</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>عرض</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>تحرير</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN victime_CIN_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_victime_CIN}  r-vertical-field" 
+	data-fieldname="victime_CIN" 
+	data-signal-error-for="victime_CIN{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="victime_CIN" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_victime_CIN}">
+		{BEGIN victime_CIN_label}{$label Victime victime_CIN }{END victime_CIN_label}
+	</label>
+	<div class="r-edit-field">
+		{$victime_CIN_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="victime_CIN">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END victime_CIN_fieldblock}
+											
+{BEGIN Nom_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nom_victime}  r-vertical-field" 
+	data-fieldname="Nom_victime" 
+	data-signal-error-for="Nom_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Nom_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Nom_victime}">
+		{BEGIN Nom_victime_label}{$label Victime Nom_victime }{END Nom_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$Nom_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Nom_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Nom_victime_fieldblock}
+											
+{BEGIN Adresse_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Adresse_victime}  r-vertical-field" 
+	data-fieldname="Adresse_victime" 
+	data-signal-error-for="Adresse_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Adresse_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Adresse_victime}">
+		{BEGIN Adresse_victime_label}{$label Victime Adresse_victime }{END Adresse_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$Adresse_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Adresse_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Adresse_victime_fieldblock}
+											
+{BEGIN Tel_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Tel_victime}  r-vertical-field" 
+	data-fieldname="Tel_victime" 
+	data-signal-error-for="Tel_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Tel_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Tel_victime}">
+		{BEGIN Tel_victime_label}{$label Victime Tel_victime }{END Tel_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$Tel_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Tel_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Tel_victime_fieldblock}
+											
+{BEGIN Age_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Age_victime}  r-vertical-field" 
+	data-fieldname="Age_victime" 
+	data-signal-error-for="Age_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="Age_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Age_victime}">
+		{BEGIN Age_victime_label}{$label Victime Age_victime }{END Age_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$Age_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Age_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Age_victime_fieldblock}
+											
+{BEGIN Region_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Region_victime}  r-vertical-field" 
+	data-fieldname="Region_victime" 
+	data-signal-error-for="Region_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Region_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Region_victime}">
+		{BEGIN Region_victime_label}{$label Victime Region_victime }{END Region_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$Region_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Region_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Region_victime_fieldblock}
+											
+{BEGIN TypeHabitation_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TypeHabitation_victime}  r-vertical-field" 
+	data-fieldname="TypeHabitation_victime" 
+	data-signal-error-for="TypeHabitation_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="TypeHabitation_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TypeHabitation_victime}">
+		{BEGIN TypeHabitation_victime_label}{$label Victime TypeHabitation_victime }{END TypeHabitation_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$TypeHabitation_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TypeHabitation_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END TypeHabitation_victime_fieldblock}
+											
+{BEGIN NivScolaire_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NivScolaire_victime}  r-vertical-field" 
+	data-fieldname="NivScolaire_victime" 
+	data-signal-error-for="NivScolaire_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="NivScolaire_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_NivScolaire_victime}">
+		{BEGIN NivScolaire_victime_label}{$label Victime NivScolaire_victime }{END NivScolaire_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$NivScolaire_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NivScolaire_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END NivScolaire_victime_fieldblock}
+											
+{BEGIN ActivitePro_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ActivitePro_victime}  r-vertical-field" 
+	data-fieldname="ActivitePro_victime" 
+	data-signal-error-for="ActivitePro_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="ActivitePro_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ActivitePro_victime}">
+		{BEGIN ActivitePro_victime_label}{$label Victime ActivitePro_victime }{END ActivitePro_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$ActivitePro_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ActivitePro_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ActivitePro_victime_fieldblock}
+											
+{BEGIN EtatCivil_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EtatCivil_victime}  r-vertical-field" 
+	data-fieldname="EtatCivil_victime" 
+	data-signal-error-for="EtatCivil_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="EtatCivil_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_EtatCivil_victime}">
+		{BEGIN EtatCivil_victime_label}{$label Victime EtatCivil_victime }{END EtatCivil_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$EtatCivil_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="EtatCivil_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END EtatCivil_victime_fieldblock}
+										</td>
+			{END cellblock_grid_c3}
+										</tr>
+										</tbody></table>
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section" {$item_section} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} data-toggle="collapse"   
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				زواج أو طلاق الناجية من العنف:			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VictDate_marriage_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VictDate_marriage}  r-vertical-field" 
+	data-fieldname="VictDate_marriage" 
+	data-signal-error-for="VictDate_marriage{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="VictDate_marriage" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_VictDate_marriage}">
+		{BEGIN VictDate_marriage_label}{$label Victime VictDate_marriage }{END VictDate_marriage_label}
+	</label>
+	<div class="r-edit-field">
+		{$VictDate_marriage_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VictDate_marriage">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END VictDate_marriage_fieldblock}
+											
+{BEGIN Periode_marriage_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Periode_marriage}  r-vertical-field" 
+	data-fieldname="Periode_marriage" 
+	data-signal-error-for="Periode_marriage{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="Periode_marriage" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Periode_marriage}">
+		{BEGIN Periode_marriage_label}{$label Victime Periode_marriage }{END Periode_marriage_label}
+	</label>
+	<div class="r-edit-field">
+		{$Periode_marriage_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Periode_marriage">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Periode_marriage_fieldblock}
+											
+{BEGIN Date_divorce_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Date_divorce}  r-vertical-field" 
+	data-fieldname="Date_divorce" 
+	data-signal-error-for="Date_divorce{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="Date_divorce" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Date_divorce}">
+		{BEGIN Date_divorce_label}{$label Victime Date_divorce }{END Date_divorce_label}
+	</label>
+	<div class="r-edit-field">
+		{$Date_divorce_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Date_divorce">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Date_divorce_fieldblock}
+											
+{BEGIN Type_divorce_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Type_divorce}  r-vertical-field" 
+	data-fieldname="Type_divorce" 
+	data-signal-error-for="Type_divorce{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="Type_divorce" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Type_divorce}">
+		{BEGIN Type_divorce_label}{$label Victime Type_divorce }{END Type_divorce_label}
+	</label>
+	<div class="r-edit-field">
+		{$Type_divorce_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Type_divorce">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Type_divorce_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+								</tr>
+			</tbody></table>
+{END section_block}
+		  </div>
+		</div>
+	</div>
+											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Nbr_enfants_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nbr_enfants}  r-vertical-field" 
+	data-fieldname="Nbr_enfants" 
+	data-signal-error-for="Nbr_enfants{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="Nbr_enfants" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Nbr_enfants}">
+		{BEGIN Nbr_enfants_label}{$label Victime Nbr_enfants }{END Nbr_enfants_label}
+	</label>
+	<div class="r-edit-field">
+		{$Nbr_enfants_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Nbr_enfants">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Nbr_enfants_fieldblock}
+											
+{BEGIN NbrEnfant_Gracon_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NbrEnfant_Gracon}  r-vertical-field" 
+	data-fieldname="NbrEnfant_Gracon" 
+	data-signal-error-for="NbrEnfant_Gracon{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="NbrEnfant_Gracon" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_NbrEnfant_Gracon}">
+		{BEGIN NbrEnfant_Gracon_label}{$label Victime NbrEnfant_Gracon }{END NbrEnfant_Gracon_label}
+	</label>
+	<div class="r-edit-field">
+		{$NbrEnfant_Gracon_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NbrEnfant_Gracon">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END NbrEnfant_Gracon_fieldblock}
+											
+{BEGIN NbrEnfant_Fille_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NbrEnfant_Fille}  r-vertical-field" 
+	data-fieldname="NbrEnfant_Fille" 
+	data-signal-error-for="NbrEnfant_Fille{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="NbrEnfant_Fille" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_NbrEnfant_Fille}">
+		{BEGIN NbrEnfant_Fille_label}{$label Victime NbrEnfant_Fille }{END NbrEnfant_Fille_label}
+	</label>
+	<div class="r-edit-field">
+		{$NbrEnfant_Fille_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NbrEnfant_Fille">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END NbrEnfant_Fille_fieldblock}
+											
+{BEGIN Victime_ENceinte_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Victime_ENceinte}  r-vertical-field" 
+	data-fieldname="Victime_ENceinte" 
+	data-signal-error-for="Victime_ENceinte{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="Victime_ENceinte" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Victime_ENceinte}">
+		{BEGIN Victime_ENceinte_label}{$label Victime Victime_ENceinte }{END Victime_ENceinte_label}
+	</label>
+	<div class="r-edit-field">
+		{$Victime_ENceinte_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Victime_ENceinte">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Victime_ENceinte_fieldblock}
+											
+{BEGIN Enfant_list_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Enfant_list}  r-vertical-field" 
+	data-fieldname="Enfant_list" 
+	data-signal-error-for="Enfant_list{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="Enfant_list" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Enfant_list}">
+		{BEGIN Enfant_list_label}{$label Victime Enfant_list }{END Enfant_list_label}
+	</label>
+	<div class="r-edit-field">
+		{$Enfant_list_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Enfant_list">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Enfant_list_fieldblock}
+											
+{BEGIN CouvSocial_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CouvSocial_victime}  r-vertical-field" 
+	data-fieldname="CouvSocial_victime" 
+	data-signal-error-for="CouvSocial_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="CouvSocial_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_CouvSocial_victime}">
+		{BEGIN CouvSocial_victime_label}{$label Victime CouvSocial_victime }{END CouvSocial_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$CouvSocial_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CouvSocial_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END CouvSocial_victime_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							حفظ			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							رجوع إلى القائمة			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							إلغاء			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

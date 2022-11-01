@@ -1,0 +1,316 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel Enfants search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ID_enfant_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID_enfant}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ID_enfant" 
+	
+	data-signal-error-for="ID_enfant{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="ID_enfant" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ID_enfant}">
+		{$label Enfants ID_enfant }	</label>
+	<div class="r-search-option">
+		{$searchtype_ID_enfant}
+	</div>
+	<div class="r-search-field">
+		{$ID_enfant_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ID_enfant_editcontrol1}
+	</div>
+	
+</div>
+
+{END ID_enfant_fieldblock}
+											
+{BEGIN ID_MereVict_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID_MereVict}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ID_MereVict" 
+	
+	data-signal-error-for="ID_MereVict{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="ID_MereVict" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ID_MereVict}">
+		{$label Enfants ID_MereVict }	</label>
+	<div class="r-search-option">
+		{$searchtype_ID_MereVict}
+	</div>
+	<div class="r-search-field">
+		{$ID_MereVict_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ID_MereVict_editcontrol1}
+	</div>
+	
+</div>
+
+{END ID_MereVict_fieldblock}
+											
+{BEGIN NomCompl_enfant_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NomCompl_enfant}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="NomCompl_enfant" 
+	
+	data-signal-error-for="NomCompl_enfant{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="NomCompl_enfant" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NomCompl_enfant}">
+		{$label Enfants NomCompl_enfant }	</label>
+	<div class="r-search-option">
+		{$searchtype_NomCompl_enfant}
+	</div>
+	<div class="r-search-field">
+		{$NomCompl_enfant_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NomCompl_enfant_editcontrol1}
+	</div>
+	
+</div>
+
+{END NomCompl_enfant_fieldblock}
+											
+{BEGIN DateNaiss_enfant_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DateNaiss_enfant}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="DateNaiss_enfant" 
+	
+	data-signal-error-for="DateNaiss_enfant{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="DateNaiss_enfant" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_DateNaiss_enfant}">
+		{$label Enfants DateNaiss_enfant }	</label>
+	<div class="r-search-option">
+		{$searchtype_DateNaiss_enfant}
+	</div>
+	<div class="r-search-field">
+		{$DateNaiss_enfant_editcontrol}	</div>
+	<div class="r-search-field">
+		{$DateNaiss_enfant_editcontrol1}
+	</div>
+	
+</div>
+
+{END DateNaiss_enfant_fieldblock}
+											
+{BEGIN Enfant_scolarise_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Enfant_scolarise}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Enfant_scolarise" 
+	
+	data-signal-error-for="Enfant_scolarise{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="Enfant_scolarise" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Enfant_scolarise}">
+		{$label Enfants Enfant_scolarise }	</label>
+	<div class="r-search-option">
+		{$searchtype_Enfant_scolarise}
+	</div>
+	<div class="r-search-field">
+		{$Enfant_scolarise_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Enfant_scolarise_editcontrol1}
+	</div>
+	
+</div>
+
+{END Enfant_scolarise_fieldblock}
+											
+{BEGIN Enfant_Nscolarise_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Enfant_Nscolarise}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Enfant_Nscolarise" 
+	
+	data-signal-error-for="Enfant_Nscolarise{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="Enfant_Nscolarise" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Enfant_Nscolarise}">
+		{$label Enfants Enfant_Nscolarise }	</label>
+	<div class="r-search-option">
+		{$searchtype_Enfant_Nscolarise}
+	</div>
+	<div class="r-search-field">
+		{$Enfant_Nscolarise_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Enfant_Nscolarise_editcontrol1}
+	</div>
+	
+</div>
+
+{END Enfant_Nscolarise_fieldblock}
+											
+{BEGIN Enf_InsEtatCivil_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Enf_InsEtatCivil}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Enf_InsEtatCivil" 
+	
+	data-signal-error-for="Enf_InsEtatCivil{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="Enf_InsEtatCivil" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Enf_InsEtatCivil}">
+		{$label Enfants Enf_InsEtatCivil }	</label>
+	<div class="r-search-option">
+		{$searchtype_Enf_InsEtatCivil}
+	</div>
+	<div class="r-search-field">
+		{$Enf_InsEtatCivil_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Enf_InsEtatCivil_editcontrol1}
+	</div>
+	
+</div>
+
+{END Enf_InsEtatCivil_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							بحث			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							تفريغ الحقول			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							رجوع إلى القائمة			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							إلغاء			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

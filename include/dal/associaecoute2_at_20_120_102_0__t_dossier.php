@@ -1,0 +1,41 @@
+<?php
+$dalTablet_dossier = array();
+$dalTablet_dossier["num_dossier"] = array("type"=>3,"varname"=>"num_dossier", "name" => "num_dossier");
+$dalTablet_dossier["nom_assist"] = array("type"=>200,"varname"=>"nom_assist", "name" => "nom_assist");
+$dalTablet_dossier["SourceInfo"] = array("type"=>200,"varname"=>"SourceInfo", "name" => "SourceInfo");
+$dalTablet_dossier["Date_ecoute"] = array("type"=>7,"varname"=>"Date_ecoute", "name" => "Date_ecoute");
+$dalTablet_dossier["vcin"] = array("type"=>200,"varname"=>"vcin", "name" => "vcin");
+$dalTablet_dossier["victime"] = array("type"=>200,"varname"=>"victime", "name" => "victime");
+$dalTablet_dossier["coupable"] = array("type"=>200,"varname"=>"coupable", "name" => "coupable");
+$dalTablet_dossier["rel_coup_victime"] = array("type"=>200,"varname"=>"rel_coup_victime", "name" => "rel_coup_victime");
+$dalTablet_dossier["date_viol"] = array("type"=>7,"varname"=>"date_viol", "name" => "date_viol");
+$dalTablet_dossier["viol_eco"] = array("type"=>200,"varname"=>"viol_eco", "name" => "viol_eco");
+$dalTablet_dossier["viol_corp"] = array("type"=>200,"varname"=>"viol_corp", "name" => "viol_corp");
+$dalTablet_dossier["viol_sexuel"] = array("type"=>200,"varname"=>"viol_sexuel", "name" => "viol_sexuel");
+$dalTablet_dossier["viol_psych"] = array("type"=>200,"varname"=>"viol_psych", "name" => "viol_psych");
+$dalTablet_dossier["viol_juris"] = array("type"=>200,"varname"=>"viol_juris", "name" => "viol_juris");
+$dalTablet_dossier["conseq_corp"] = array("type"=>200,"varname"=>"conseq_corp", "name" => "conseq_corp");
+$dalTablet_dossier["consequ_psych"] = array("type"=>200,"varname"=>"consequ_psych", "name" => "consequ_psych");
+$dalTablet_dossier["conseq_ecosocial"] = array("type"=>200,"varname"=>"conseq_ecosocial", "name" => "conseq_ecosocial");
+$dalTablet_dossier["conseq_enf"] = array("type"=>200,"varname"=>"conseq_enf", "name" => "conseq_enf");
+$dalTablet_dossier["demand_vict"] = array("type"=>200,"varname"=>"demand_vict", "name" => "demand_vict");
+$dalTablet_dossier["svce_prop"] = array("type"=>200,"varname"=>"svce_prop", "name" => "svce_prop");
+$dalTablet_dossier["ms3cellenffem"] = array("type"=>200,"varname"=>"ms3cellenffem", "name" => "ms3cellenffem");
+$dalTablet_dossier["ms3oblpaye"] = array("type"=>200,"varname"=>"ms3oblpaye", "name" => "ms3oblpaye");
+$dalTablet_dossier["ms3obstacles"] = array("type"=>200,"varname"=>"ms3obstacles", "name" => "ms3obstacles");
+$dalTablet_dossier["sachcellenffem"] = array("type"=>200,"varname"=>"sachcellenffem", "name" => "sachcellenffem");
+$dalTablet_dossier["sachcopyrap"] = array("type"=>200,"varname"=>"sachcopyrap", "name" => "sachcopyrap");
+$dalTablet_dossier["rapporoui"] = array("type"=>200,"varname"=>"rapporoui", "name" => "rapporoui");
+$dalTablet_dossier["encscepublic"] = array("type"=>200,"varname"=>"encscepublic", "name" => "encscepublic");
+$dalTablet_dossier["encscpuboui"] = array("type"=>200,"varname"=>"encscpuboui", "name" => "encscpuboui");
+$dalTablet_dossier["n3cellenffem"] = array("type"=>200,"varname"=>"n3cellenffem", "name" => "n3cellenffem");
+$dalTablet_dossier["n3pression"] = array("type"=>200,"varname"=>"n3pression", "name" => "n3pression");
+$dalTablet_dossier["n3docs"] = array("type"=>200,"varname"=>"n3docs", "name" => "n3docs");
+$dalTablet_dossier["tribcellenffem"] = array("type"=>200,"varname"=>"tribcellenffem", "name" => "tribcellenffem");
+$dalTablet_dossier["tribpression"] = array("type"=>200,"varname"=>"tribpression", "name" => "tribpression");
+$dalTablet_dossier["tribobligpaye"] = array("type"=>200,"varname"=>"tribobligpaye", "name" => "tribobligpaye");
+$dalTablet_dossier["remarques"] = array("type"=>201,"varname"=>"remarques", "name" => "remarques");
+	$dalTablet_dossier["num_dossier"]["key"]=true;
+
+$dal_info["associaecoute2_at_20_120_102_0__t_dossier"] = &$dalTablet_dossier;
+?>

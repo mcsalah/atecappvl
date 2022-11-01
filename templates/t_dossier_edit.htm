@@ -1,0 +1,969 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel t_dossier edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>رجوع إلى القائمة</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>عرض</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN nom_assist_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom_assist}  r-vertical-field" 
+	data-fieldname="nom_assist" 
+	data-signal-error-for="nom_assist{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="nom_assist" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nom_assist}">
+		{BEGIN nom_assist_label}{$label t_dossier nom_assist }{END nom_assist_label}
+	</label>
+	<div class="r-edit-field">
+		{$nom_assist_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nom_assist">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nom_assist_fieldblock}
+											
+{BEGIN SourceInfo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SourceInfo}  r-vertical-field" 
+	data-fieldname="SourceInfo" 
+	data-signal-error-for="SourceInfo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="SourceInfo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_SourceInfo}">
+		{BEGIN SourceInfo_label}{$label t_dossier SourceInfo }{END SourceInfo_label}
+	</label>
+	<div class="r-edit-field">
+		{$SourceInfo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SourceInfo">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END SourceInfo_fieldblock}
+											
+{BEGIN Date_ecoute_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Date_ecoute}  r-vertical-field" 
+	data-fieldname="Date_ecoute" 
+	data-signal-error-for="Date_ecoute{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Date_ecoute" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Date_ecoute}">
+		{BEGIN Date_ecoute_label}{$label t_dossier Date_ecoute }{END Date_ecoute_label}
+	</label>
+	<div class="r-edit-field">
+		{$Date_ecoute_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Date_ecoute">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Date_ecoute_fieldblock}
+											
+{BEGIN vcin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vcin}  r-vertical-field" 
+	data-fieldname="vcin" 
+	data-signal-error-for="vcin{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="vcin" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_vcin}">
+		{BEGIN vcin_label}{$label t_dossier vcin }{END vcin_label}
+	</label>
+	<div class="r-edit-field">
+		{$vcin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vcin">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END vcin_fieldblock}
+											
+{BEGIN victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_victime}  r-vertical-field" 
+	data-fieldname="victime" 
+	data-signal-error-for="victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_victime}">
+		{BEGIN victime_label}{$label t_dossier victime }{END victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END victime_fieldblock}
+											
+{BEGIN coupable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_coupable}  r-vertical-field" 
+	data-fieldname="coupable" 
+	data-signal-error-for="coupable{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="coupable" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_coupable}">
+		{BEGIN coupable_label}{$label t_dossier coupable }{END coupable_label}
+	</label>
+	<div class="r-edit-field">
+		{$coupable_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="coupable">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END coupable_fieldblock}
+											
+{BEGIN rel_coup_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rel_coup_victime}  r-vertical-field" 
+	data-fieldname="rel_coup_victime" 
+	data-signal-error-for="rel_coup_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="rel_coup_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_rel_coup_victime}">
+		{BEGIN rel_coup_victime_label}{$label t_dossier rel_coup_victime }{END rel_coup_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$rel_coup_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rel_coup_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END rel_coup_victime_fieldblock}
+											
+{BEGIN date_viol_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_viol}  r-vertical-field" 
+	data-fieldname="date_viol" 
+	data-signal-error-for="date_viol{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="date_viol" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_viol}">
+		{BEGIN date_viol_label}{$label t_dossier date_viol }{END date_viol_label}
+	</label>
+	<div class="r-edit-field">
+		{$date_viol_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_viol">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END date_viol_fieldblock}
+											
+{BEGIN viol_eco_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_eco}  r-vertical-field" 
+	data-fieldname="viol_eco" 
+	data-signal-error-for="viol_eco{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="viol_eco" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_eco}">
+		{BEGIN viol_eco_label}{$label t_dossier viol_eco }{END viol_eco_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_eco_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_eco">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_eco_fieldblock}
+											
+{BEGIN viol_corp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_corp}  r-vertical-field" 
+	data-fieldname="viol_corp" 
+	data-signal-error-for="viol_corp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="viol_corp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_corp}">
+		{BEGIN viol_corp_label}{$label t_dossier viol_corp }{END viol_corp_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_corp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_corp">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_corp_fieldblock}
+											
+{BEGIN viol_sexuel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_sexuel}  r-vertical-field" 
+	data-fieldname="viol_sexuel" 
+	data-signal-error-for="viol_sexuel{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="viol_sexuel" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_sexuel}">
+		{BEGIN viol_sexuel_label}{$label t_dossier viol_sexuel }{END viol_sexuel_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_sexuel_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_sexuel">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_sexuel_fieldblock}
+											
+{BEGIN viol_psych_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_psych}  r-vertical-field" 
+	data-fieldname="viol_psych" 
+	data-signal-error-for="viol_psych{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="viol_psych" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_psych}">
+		{BEGIN viol_psych_label}{$label t_dossier viol_psych }{END viol_psych_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_psych_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_psych">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_psych_fieldblock}
+											
+{BEGIN viol_juris_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_juris}  r-vertical-field" 
+	data-fieldname="viol_juris" 
+	data-signal-error-for="viol_juris{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="viol_juris" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_juris}">
+		{BEGIN viol_juris_label}{$label t_dossier viol_juris }{END viol_juris_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_juris_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_juris">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_juris_fieldblock}
+											
+{BEGIN conseq_corp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_corp}  r-vertical-field" 
+	data-fieldname="conseq_corp" 
+	data-signal-error-for="conseq_corp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="conseq_corp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_conseq_corp}">
+		{BEGIN conseq_corp_label}{$label t_dossier conseq_corp }{END conseq_corp_label}
+	</label>
+	<div class="r-edit-field">
+		{$conseq_corp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="conseq_corp">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END conseq_corp_fieldblock}
+											
+{BEGIN consequ_psych_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_consequ_psych}  r-vertical-field" 
+	data-fieldname="consequ_psych" 
+	data-signal-error-for="consequ_psych{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="consequ_psych" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_consequ_psych}">
+		{BEGIN consequ_psych_label}{$label t_dossier consequ_psych }{END consequ_psych_label}
+	</label>
+	<div class="r-edit-field">
+		{$consequ_psych_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="consequ_psych">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END consequ_psych_fieldblock}
+											
+{BEGIN conseq_enf_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_enf}  r-vertical-field" 
+	data-fieldname="conseq_enf" 
+	data-signal-error-for="conseq_enf{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="conseq_enf" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_conseq_enf}">
+		{BEGIN conseq_enf_label}{$label t_dossier conseq_enf }{END conseq_enf_label}
+	</label>
+	<div class="r-edit-field">
+		{$conseq_enf_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="conseq_enf">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END conseq_enf_fieldblock}
+											
+{BEGIN demand_vict_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_demand_vict}  r-vertical-field" 
+	data-fieldname="demand_vict" 
+	data-signal-error-for="demand_vict{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="demand_vict" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_demand_vict}">
+		{BEGIN demand_vict_label}{$label t_dossier demand_vict }{END demand_vict_label}
+	</label>
+	<div class="r-edit-field">
+		{$demand_vict_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="demand_vict">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END demand_vict_fieldblock}
+											
+{BEGIN svce_prop_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_svce_prop}  r-vertical-field" 
+	data-fieldname="svce_prop" 
+	data-signal-error-for="svce_prop{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="svce_prop" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_svce_prop}">
+		{BEGIN svce_prop_label}{$label t_dossier svce_prop }{END svce_prop_label}
+	</label>
+	<div class="r-edit-field">
+		{$svce_prop_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="svce_prop">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END svce_prop_fieldblock}
+											
+{BEGIN ms3cellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3cellenffem}  r-vertical-field" 
+	data-fieldname="ms3cellenffem" 
+	data-signal-error-for="ms3cellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="ms3cellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ms3cellenffem}">
+		{BEGIN ms3cellenffem_label}{$label t_dossier ms3cellenffem }{END ms3cellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$ms3cellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ms3cellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ms3cellenffem_fieldblock}
+											
+{BEGIN ms3oblpaye_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3oblpaye}  r-vertical-field" 
+	data-fieldname="ms3oblpaye" 
+	data-signal-error-for="ms3oblpaye{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="ms3oblpaye" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ms3oblpaye}">
+		{BEGIN ms3oblpaye_label}{$label t_dossier ms3oblpaye }{END ms3oblpaye_label}
+	</label>
+	<div class="r-edit-field">
+		{$ms3oblpaye_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ms3oblpaye">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ms3oblpaye_fieldblock}
+											
+{BEGIN ms3obstacles_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3obstacles}  r-vertical-field" 
+	data-fieldname="ms3obstacles" 
+	data-signal-error-for="ms3obstacles{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="ms3obstacles" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ms3obstacles}">
+		{BEGIN ms3obstacles_label}{$label t_dossier ms3obstacles }{END ms3obstacles_label}
+	</label>
+	<div class="r-edit-field">
+		{$ms3obstacles_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ms3obstacles">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ms3obstacles_fieldblock}
+											
+{BEGIN sachcellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sachcellenffem}  r-vertical-field" 
+	data-fieldname="sachcellenffem" 
+	data-signal-error-for="sachcellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="sachcellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sachcellenffem}">
+		{BEGIN sachcellenffem_label}{$label t_dossier sachcellenffem }{END sachcellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$sachcellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sachcellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END sachcellenffem_fieldblock}
+											
+{BEGIN sachcopyrap_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sachcopyrap}  r-vertical-field" 
+	data-fieldname="sachcopyrap" 
+	data-signal-error-for="sachcopyrap{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="sachcopyrap" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sachcopyrap}">
+		{BEGIN sachcopyrap_label}{$label t_dossier sachcopyrap }{END sachcopyrap_label}
+	</label>
+	<div class="r-edit-field">
+		{$sachcopyrap_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sachcopyrap">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END sachcopyrap_fieldblock}
+											
+{BEGIN rapporoui_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rapporoui}  r-vertical-field" 
+	data-fieldname="rapporoui" 
+	data-signal-error-for="rapporoui{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="rapporoui" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_rapporoui}">
+		{BEGIN rapporoui_label}{$label t_dossier rapporoui }{END rapporoui_label}
+	</label>
+	<div class="r-edit-field">
+		{$rapporoui_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rapporoui">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END rapporoui_fieldblock}
+											
+{BEGIN encscepublic_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_encscepublic}  r-vertical-field" 
+	data-fieldname="encscepublic" 
+	data-signal-error-for="encscepublic{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="encscepublic" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_encscepublic}">
+		{BEGIN encscepublic_label}{$label t_dossier encscepublic }{END encscepublic_label}
+	</label>
+	<div class="r-edit-field">
+		{$encscepublic_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="encscepublic">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END encscepublic_fieldblock}
+											
+{BEGIN encscpuboui_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_encscpuboui}  r-vertical-field" 
+	data-fieldname="encscpuboui" 
+	data-signal-error-for="encscpuboui{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="encscpuboui" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_encscpuboui}">
+		{BEGIN encscpuboui_label}{$label t_dossier encscpuboui }{END encscpuboui_label}
+	</label>
+	<div class="r-edit-field">
+		{$encscpuboui_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="encscpuboui">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END encscpuboui_fieldblock}
+											
+{BEGIN n3cellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3cellenffem}  r-vertical-field" 
+	data-fieldname="n3cellenffem" 
+	data-signal-error-for="n3cellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="n3cellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_n3cellenffem}">
+		{BEGIN n3cellenffem_label}{$label t_dossier n3cellenffem }{END n3cellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$n3cellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="n3cellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END n3cellenffem_fieldblock}
+											
+{BEGIN n3pression_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3pression}  r-vertical-field" 
+	data-fieldname="n3pression" 
+	data-signal-error-for="n3pression{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="n3pression" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_n3pression}">
+		{BEGIN n3pression_label}{$label t_dossier n3pression }{END n3pression_label}
+	</label>
+	<div class="r-edit-field">
+		{$n3pression_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="n3pression">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END n3pression_fieldblock}
+											
+{BEGIN n3docs_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3docs}  r-vertical-field" 
+	data-fieldname="n3docs" 
+	data-signal-error-for="n3docs{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="n3docs" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_n3docs}">
+		{BEGIN n3docs_label}{$label t_dossier n3docs }{END n3docs_label}
+	</label>
+	<div class="r-edit-field">
+		{$n3docs_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="n3docs">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END n3docs_fieldblock}
+											
+{BEGIN tribcellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribcellenffem}  r-vertical-field" 
+	data-fieldname="tribcellenffem" 
+	data-signal-error-for="tribcellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="tribcellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tribcellenffem}">
+		{BEGIN tribcellenffem_label}{$label t_dossier tribcellenffem }{END tribcellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$tribcellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tribcellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tribcellenffem_fieldblock}
+											
+{BEGIN tribpression_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribpression}  r-vertical-field" 
+	data-fieldname="tribpression" 
+	data-signal-error-for="tribpression{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="tribpression" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tribpression}">
+		{BEGIN tribpression_label}{$label t_dossier tribpression }{END tribpression_label}
+	</label>
+	<div class="r-edit-field">
+		{$tribpression_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tribpression">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tribpression_fieldblock}
+											
+{BEGIN tribobligpaye_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribobligpaye}  r-vertical-field" 
+	data-fieldname="tribobligpaye" 
+	data-signal-error-for="tribobligpaye{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="tribobligpaye" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tribobligpaye}">
+		{BEGIN tribobligpaye_label}{$label t_dossier tribobligpaye }{END tribobligpaye_label}
+	</label>
+	<div class="r-edit-field">
+		{$tribobligpaye_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tribobligpaye">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tribobligpaye_fieldblock}
+											
+{BEGIN remarques_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remarques}  r-vertical-field" 
+	data-fieldname="remarques" 
+	data-signal-error-for="remarques{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="remarques" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_remarques}">
+		{BEGIN remarques_label}{$label t_dossier remarques }{END remarques_label}
+	</label>
+	<div class="r-edit-field">
+		{$remarques_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="remarques">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END remarques_fieldblock}
+											
+{BEGIN conseq_ecosocial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_ecosocial}  r-vertical-field" 
+	data-fieldname="conseq_ecosocial" 
+	data-signal-error-for="conseq_ecosocial{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="conseq_ecosocial" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_conseq_ecosocial}">
+		{BEGIN conseq_ecosocial_label}{$label t_dossier conseq_ecosocial }{END conseq_ecosocial_label}
+	</label>
+	<div class="r-edit-field">
+		{$conseq_ecosocial_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="conseq_ecosocial">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END conseq_ecosocial_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							حفظ			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							رجوع إلى القائمة			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							إلغاء			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		تفريغ الحقول		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		عرض		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

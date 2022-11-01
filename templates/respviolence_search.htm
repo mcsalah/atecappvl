@@ -1,0 +1,416 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel Respviolence search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ID_repviol_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ID_repviol}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ID_repviol" 
+	
+	data-signal-error-for="ID_repviol{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="ID_repviol" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ID_repviol}">
+		{$label Respviolence ID_repviol }	</label>
+	<div class="r-search-option">
+		{$searchtype_ID_repviol}
+	</div>
+	<div class="r-search-field">
+		{$ID_repviol_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ID_repviol_editcontrol1}
+	</div>
+	
+</div>
+
+{END ID_repviol_fieldblock}
+											
+{BEGIN Etat_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Etat}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Etat" 
+	
+	data-signal-error-for="Etat{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="Etat" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Etat}">
+		{$label Respviolence Etat }	</label>
+	<div class="r-search-option">
+		{$searchtype_Etat}
+	</div>
+	<div class="r-search-field">
+		{$Etat_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Etat_editcontrol1}
+	</div>
+	
+</div>
+
+{END Etat_fieldblock}
+											
+{BEGIN R_nomcomplet_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_nomcomplet}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_nomcomplet" 
+	
+	data-signal-error-for="R_nomcomplet{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="R_nomcomplet" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_nomcomplet}">
+		{$label Respviolence R_nomcomplet }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_nomcomplet}
+	</div>
+	<div class="r-search-field">
+		{$R_nomcomplet_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_nomcomplet_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_nomcomplet_fieldblock}
+											
+{BEGIN R_adresse_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_adresse}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_adresse" 
+	
+	data-signal-error-for="R_adresse{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="R_adresse" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_adresse}">
+		{$label Respviolence R_adresse }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_adresse}
+	</div>
+	<div class="r-search-field">
+		{$R_adresse_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_adresse_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_adresse_fieldblock}
+											
+{BEGIN R_tel_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_tel}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_tel" 
+	
+	data-signal-error-for="R_tel{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="R_tel" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_tel}">
+		{$label Respviolence R_tel }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_tel}
+	</div>
+	<div class="r-search-field">
+		{$R_tel_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_tel_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_tel_fieldblock}
+											
+{BEGIN R_nationalite_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_nationalite}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_nationalite" 
+	
+	data-signal-error-for="R_nationalite{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="R_nationalite" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_nationalite}">
+		{$label Respviolence R_nationalite }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_nationalite}
+	</div>
+	<div class="r-search-field">
+		{$R_nationalite_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_nationalite_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_nationalite_fieldblock}
+											
+{BEGIN R_age_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_age}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_age" 
+	
+	data-signal-error-for="R_age{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="R_age" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_age}">
+		{$label Respviolence R_age }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_age}
+	</div>
+	<div class="r-search-field">
+		{$R_age_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_age_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_age_fieldblock}
+											
+{BEGIN R_NivScolaire_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_NivScolaire}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_NivScolaire" 
+	
+	data-signal-error-for="R_NivScolaire{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="R_NivScolaire" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_NivScolaire}">
+		{$label Respviolence R_NivScolaire }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_NivScolaire}
+	</div>
+	<div class="r-search-field">
+		{$R_NivScolaire_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_NivScolaire_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_NivScolaire_fieldblock}
+											
+{BEGIN R_ActivitePro_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_ActivitePro}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_ActivitePro" 
+	
+	data-signal-error-for="R_ActivitePro{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="R_ActivitePro" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_ActivitePro}">
+		{$label Respviolence R_ActivitePro }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_ActivitePro}
+	</div>
+	<div class="r-search-field">
+		{$R_ActivitePro_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_ActivitePro_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_ActivitePro_fieldblock}
+											
+{BEGIN R_antesced_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_antesced}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_antesced" 
+	
+	data-signal-error-for="R_antesced{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="R_antesced" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_antesced}">
+		{$label Respviolence R_antesced }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_antesced}
+	</div>
+	<div class="r-search-field">
+		{$R_antesced_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_antesced_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_antesced_fieldblock}
+											
+{BEGIN R_junck_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_R_junck}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="R_junck" 
+	
+	data-signal-error-for="R_junck{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="R_junck" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_R_junck}">
+		{$label Respviolence R_junck }	</label>
+	<div class="r-search-option">
+		{$searchtype_R_junck}
+	</div>
+	<div class="r-search-field">
+		{$R_junck_editcontrol}	</div>
+	<div class="r-search-field">
+		{$R_junck_editcontrol1}
+	</div>
+	
+</div>
+
+{END R_junck_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							بحث			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							تفريغ الحقول			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							رجوع إلى القائمة			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							إلغاء			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

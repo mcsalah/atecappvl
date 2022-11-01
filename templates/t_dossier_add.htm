@@ -1,0 +1,1678 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel t_dossier add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>رجوع إلى القائمة</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>عرض</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>تحرير</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section" {$item_section} data-pageid="{$pageid}" data-page="t_dossier_add">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} data-toggle="collapse"   
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				 المعلومات الخاصة  بالملف 			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN nom_assist_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom_assist}  r-vertical-field" 
+	data-fieldname="nom_assist" 
+	data-signal-error-for="nom_assist{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="nom_assist" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nom_assist}">
+		{BEGIN nom_assist_label}{$label t_dossier nom_assist }{END nom_assist_label}
+	</label>
+	<div class="r-edit-field">
+		{$nom_assist_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nom_assist">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END nom_assist_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN SourceInfo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SourceInfo}  r-vertical-field" 
+	data-fieldname="SourceInfo" 
+	data-signal-error-for="SourceInfo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="SourceInfo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_SourceInfo}">
+		{BEGIN SourceInfo_label}{$label t_dossier SourceInfo }{END SourceInfo_label}
+	</label>
+	<div class="r-edit-field">
+		{$SourceInfo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SourceInfo">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END SourceInfo_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c7}
+<td
+	{$cell_section_c7}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c7" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Date_ecoute_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Date_ecoute}  r-vertical-field" 
+	data-fieldname="Date_ecoute" 
+	data-signal-error-for="Date_ecoute{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Date_ecoute" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Date_ecoute}">
+		{BEGIN Date_ecoute_label}{$label t_dossier Date_ecoute }{END Date_ecoute_label}
+	</label>
+	<div class="r-edit-field">
+		{$Date_ecoute_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Date_ecoute">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END Date_ecoute_fieldblock}
+	
+								</td>
+			{END cellblock_section_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN vcin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vcin}  r-vertical-field" 
+	data-fieldname="vcin" 
+	data-signal-error-for="vcin{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="vcin" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_vcin}">
+		{BEGIN vcin_label}{$label t_dossier vcin }{END vcin_label}
+	</label>
+	<div class="r-edit-field">
+		{$vcin_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="vcin">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END vcin_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c5}
+<td
+	{$cell_section_c5}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c5" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_victime}  r-vertical-field" 
+	data-fieldname="victime" 
+	data-signal-error-for="victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_victime}">
+		{BEGIN victime_label}{$label t_dossier victime }{END victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END victime_fieldblock}
+	
+								</td>
+			{END cellblock_section_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c4}
+<td
+	{$cell_section_c4}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c4" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN coupable_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_coupable}  r-vertical-field" 
+	data-fieldname="coupable" 
+	data-signal-error-for="coupable{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="coupable" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_coupable}">
+		{BEGIN coupable_label}{$label t_dossier coupable }{END coupable_label}
+	</label>
+	<div class="r-edit-field">
+		{$coupable_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="coupable">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END coupable_fieldblock}
+	
+								</td>
+			{END cellblock_section_c4}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN rel_coup_victime_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rel_coup_victime}  r-vertical-field" 
+	data-fieldname="rel_coup_victime" 
+	data-signal-error-for="rel_coup_victime{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="rel_coup_victime" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_rel_coup_victime}">
+		{BEGIN rel_coup_victime_label}{$label t_dossier rel_coup_victime }{END rel_coup_victime_label}
+	</label>
+	<div class="r-edit-field">
+		{$rel_coup_victime_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rel_coup_victime">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END rel_coup_victime_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN date_viol_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_viol}  r-vertical-field" 
+	data-fieldname="date_viol" 
+	data-signal-error-for="date_viol{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="date_viol" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_date_viol}">
+		{BEGIN date_viol_label}{$label t_dossier date_viol }{END date_viol_label}
+	</label>
+	<div class="r-edit-field">
+		{$date_viol_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="date_viol">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END date_viol_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+								</tr>
+			</tbody></table>
+{END section_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section1" {$item_section1} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section2_headattrs} data-toggle="collapse"   
+
+				href="#section2{$pageid}" aria-expanded="true" aria-controls="section2"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				تصنيف العنف			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section2_xtrclass}" role="tabpanel"  {$section_section2_attrs}
+
+				id="section2{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section1_c4}
+<td
+	{$cell_section1_c4}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c4" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN viol_eco_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_eco}  r-vertical-field" 
+	data-fieldname="viol_eco" 
+	data-signal-error-for="viol_eco{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="viol_eco" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_eco}">
+		{BEGIN viol_eco_label}{$label t_dossier viol_eco }{END viol_eco_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_eco_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_eco">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_eco_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c4}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c3}
+<td
+	{$cell_section1_c3}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN viol_corp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_corp}  r-vertical-field" 
+	data-fieldname="viol_corp" 
+	data-signal-error-for="viol_corp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="viol_corp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_corp}">
+		{BEGIN viol_corp_label}{$label t_dossier viol_corp }{END viol_corp_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_corp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_corp">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_corp_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c3}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c2}
+<td
+	{$cell_section1_c2}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c2" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN viol_sexuel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_sexuel}  r-vertical-field" 
+	data-fieldname="viol_sexuel" 
+	data-signal-error-for="viol_sexuel{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="viol_sexuel" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_sexuel}">
+		{BEGIN viol_sexuel_label}{$label t_dossier viol_sexuel }{END viol_sexuel_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_sexuel_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_sexuel">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_sexuel_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c2}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN viol_psych_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_psych}  r-vertical-field" 
+	data-fieldname="viol_psych" 
+	data-signal-error-for="viol_psych{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="viol_psych" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_psych}">
+		{BEGIN viol_psych_label}{$label t_dossier viol_psych }{END viol_psych_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_psych_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_psych">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_psych_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN viol_juris_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_juris}  r-vertical-field" 
+	data-fieldname="viol_juris" 
+	data-signal-error-for="viol_juris{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="viol_juris" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_viol_juris}">
+		{BEGIN viol_juris_label}{$label t_dossier viol_juris }{END viol_juris_label}
+	</label>
+	<div class="r-edit-field">
+		{$viol_juris_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="viol_juris">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END viol_juris_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+								</tr>
+			</tbody></table>
+{END section1_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section2" {$item_section2} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section3_headattrs} data-toggle="collapse"   
+
+				href="#section3{$pageid}" aria-expanded="true" aria-controls="section3"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				الآثار المترتبة عن العنف			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section3_xtrclass}" role="tabpanel"  {$section_section3_attrs}
+
+				id="section3{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="small" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN conseq_corp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_corp}  r-vertical-field" 
+	data-fieldname="conseq_corp" 
+	data-signal-error-for="conseq_corp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="conseq_corp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_conseq_corp}">
+		{BEGIN conseq_corp_label}{$label t_dossier conseq_corp }{END conseq_corp_label}
+	</label>
+	<div class="r-edit-field">
+		{$conseq_corp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="conseq_corp">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END conseq_corp_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c1}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c3}
+<td
+	{$cell_section2_c3}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section2_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN consequ_psych_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_consequ_psych}  r-vertical-field" 
+	data-fieldname="consequ_psych" 
+	data-signal-error-for="consequ_psych{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="consequ_psych" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_consequ_psych}">
+		{BEGIN consequ_psych_label}{$label t_dossier consequ_psych }{END consequ_psych_label}
+	</label>
+	<div class="r-edit-field">
+		{$consequ_psych_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="consequ_psych">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END consequ_psych_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c3}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c2}
+<td
+	{$cell_section2_c2}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section2_c2" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN conseq_ecosocial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_ecosocial}  r-vertical-field" 
+	data-fieldname="conseq_ecosocial" 
+	data-signal-error-for="conseq_ecosocial{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="conseq_ecosocial" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_conseq_ecosocial}">
+		{BEGIN conseq_ecosocial_label}{$label t_dossier conseq_ecosocial }{END conseq_ecosocial_label}
+	</label>
+	<div class="r-edit-field">
+		{$conseq_ecosocial_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="conseq_ecosocial">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END conseq_ecosocial_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c2}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section2_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN conseq_enf_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_enf}  r-vertical-field" 
+	data-fieldname="conseq_enf" 
+	data-signal-error-for="conseq_enf{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="conseq_enf" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_conseq_enf}">
+		{BEGIN conseq_enf_label}{$label t_dossier conseq_enf }{END conseq_enf_label}
+	</label>
+	<div class="r-edit-field">
+		{$conseq_enf_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="conseq_enf">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END conseq_enf_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+			</tbody></table>
+{END section2_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section3" {$item_section3} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section4_headattrs} data-toggle="collapse"   
+
+				href="#section4{$pageid}" aria-expanded="true" aria-controls="section4"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				الممارسات الفضلى للفاعلين العموميين المسجلة من طرف الضحية:			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section4_xtrclass}" role="tabpanel"  {$section_section4_attrs}
+
+				id="section4{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section4" {$item_section4} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section5_headattrs} data-toggle="collapse"   
+
+				href="#section5{$pageid}" aria-expanded="true" aria-controls="section5"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				هل بلغت أو لجأت للسلطات			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section5_xtrclass}" role="tabpanel"  {$section_section5_attrs}
+
+				id="section5{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section6_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section6" id="form_section6_{$pageid}" data-makeup="small" {$form_section6} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section6_c1}
+<td
+	{$cell_section6_c1}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="section6_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ms3cellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3cellenffem}  r-vertical-field" 
+	data-fieldname="ms3cellenffem" 
+	data-signal-error-for="ms3cellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="ms3cellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ms3cellenffem}">
+		{BEGIN ms3cellenffem_label}{$label t_dossier ms3cellenffem }{END ms3cellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$ms3cellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ms3cellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ms3cellenffem_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c1}
+								</tr>
+			</tbody></table>
+{END section6_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section5" {$item_section5} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section6_headattrs} data-toggle="collapse"   
+
+				href="#section6{$pageid}" aria-expanded="true" aria-controls="section6"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				في حالة الضابطة القضائية الشرطة أو الدرك الملكي			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section6_xtrclass}" role="tabpanel"  {$section_section6_attrs}
+
+				id="section6{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section7_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section7" id="form_section7_{$pageid}" data-makeup="small" {$form_section7} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section7_c1}
+<td
+	{$cell_section7_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section7_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ms3oblpaye_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3oblpaye}  r-vertical-field" 
+	data-fieldname="ms3oblpaye" 
+	data-signal-error-for="ms3oblpaye{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="ms3oblpaye" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ms3oblpaye}">
+		{BEGIN ms3oblpaye_label}{$label t_dossier ms3oblpaye }{END ms3oblpaye_label}
+	</label>
+	<div class="r-edit-field">
+		{$ms3oblpaye_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ms3oblpaye">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ms3oblpaye_fieldblock}
+											
+{BEGIN ms3obstacles_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3obstacles}  r-vertical-field" 
+	data-fieldname="ms3obstacles" 
+	data-signal-error-for="ms3obstacles{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="ms3obstacles" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ms3obstacles}">
+		{BEGIN ms3obstacles_label}{$label t_dossier ms3obstacles }{END ms3obstacles_label}
+	</label>
+	<div class="r-edit-field">
+		{$ms3obstacles_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ms3obstacles">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END ms3obstacles_fieldblock}
+											
+{BEGIN sachcellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sachcellenffem}  r-vertical-field" 
+	data-fieldname="sachcellenffem" 
+	data-signal-error-for="sachcellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="sachcellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sachcellenffem}">
+		{BEGIN sachcellenffem_label}{$label t_dossier sachcellenffem }{END sachcellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$sachcellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sachcellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END sachcellenffem_fieldblock}
+	
+								</td>
+			{END cellblock_section7_c1}
+								</tr>
+			</tbody></table>
+{END section7_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section6" {$item_section6} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section7_headattrs} data-toggle="collapse"   
+
+				href="#section7{$pageid}" aria-expanded="true" aria-controls="section7"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				في حالة النيابة العامة 			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section7_xtrclass}" role="tabpanel"  {$section_section7_attrs}
+
+				id="section7{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section4_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section4" id="form_section4_{$pageid}" data-makeup="small" {$form_section4} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section4_c1}
+<td
+	{$cell_section4_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section4_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sachcopyrap_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sachcopyrap}  r-vertical-field" 
+	data-fieldname="sachcopyrap" 
+	data-signal-error-for="sachcopyrap{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="sachcopyrap" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sachcopyrap}">
+		{BEGIN sachcopyrap_label}{$label t_dossier sachcopyrap }{END sachcopyrap_label}
+	</label>
+	<div class="r-edit-field">
+		{$sachcopyrap_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sachcopyrap">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END sachcopyrap_fieldblock}
+											
+{BEGIN rapporoui_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rapporoui}  r-vertical-field" 
+	data-fieldname="rapporoui" 
+	data-signal-error-for="rapporoui{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="rapporoui" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_rapporoui}">
+		{BEGIN rapporoui_label}{$label t_dossier rapporoui }{END rapporoui_label}
+	</label>
+	<div class="r-edit-field">
+		{$rapporoui_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="rapporoui">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END rapporoui_fieldblock}
+											
+{BEGIN encscepublic_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_encscepublic}  r-vertical-field" 
+	data-fieldname="encscepublic" 
+	data-signal-error-for="encscepublic{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="encscepublic" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_encscepublic}">
+		{BEGIN encscepublic_label}{$label t_dossier encscepublic }{END encscepublic_label}
+	</label>
+	<div class="r-edit-field">
+		{$encscepublic_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="encscepublic">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END encscepublic_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c1}
+								</tr>
+			</tbody></table>
+{END section4_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section7" {$item_section7} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section8_headattrs} data-toggle="collapse"   
+
+				href="#section8{$pageid}" aria-expanded="true" aria-controls="section8"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				في حالة المحكمة 			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section8_xtrclass}" role="tabpanel"  {$section_section8_attrs}
+
+				id="section8{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section5_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section5" id="form_section5_{$pageid}" data-makeup="small" {$form_section5} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section5_c1}
+<td
+	{$cell_section5_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section5_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN encscpuboui_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_encscpuboui}  r-vertical-field" 
+	data-fieldname="encscpuboui" 
+	data-signal-error-for="encscpuboui{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="encscpuboui" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_encscpuboui}">
+		{BEGIN encscpuboui_label}{$label t_dossier encscpuboui }{END encscpuboui_label}
+	</label>
+	<div class="r-edit-field">
+		{$encscpuboui_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="encscpuboui">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END encscpuboui_fieldblock}
+											
+{BEGIN n3cellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3cellenffem}  r-vertical-field" 
+	data-fieldname="n3cellenffem" 
+	data-signal-error-for="n3cellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="n3cellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_n3cellenffem}">
+		{BEGIN n3cellenffem_label}{$label t_dossier n3cellenffem }{END n3cellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$n3cellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="n3cellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END n3cellenffem_fieldblock}
+											
+{BEGIN n3pression_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3pression}  r-vertical-field" 
+	data-fieldname="n3pression" 
+	data-signal-error-for="n3pression{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="n3pression" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_n3pression}">
+		{BEGIN n3pression_label}{$label t_dossier n3pression }{END n3pression_label}
+	</label>
+	<div class="r-edit-field">
+		{$n3pression_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="n3pression">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END n3pression_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c1}
+								</tr>
+			</tbody></table>
+{END section5_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section8" {$item_section8} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section9_headattrs} data-toggle="collapse"   
+
+				href="#section9{$pageid}" aria-expanded="true" aria-controls="section9"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				في حالة مصالح الصحة العمومية 			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section9_xtrclass}" role="tabpanel"  {$section_section9_attrs}
+
+				id="section9{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section8_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section8" id="form_section8_{$pageid}" data-makeup="small" {$form_section8} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section8_c1}
+<td
+	{$cell_section8_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section8_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN n3docs_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3docs}  r-vertical-field" 
+	data-fieldname="n3docs" 
+	data-signal-error-for="n3docs{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="n3docs" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_n3docs}">
+		{BEGIN n3docs_label}{$label t_dossier n3docs }{END n3docs_label}
+	</label>
+	<div class="r-edit-field">
+		{$n3docs_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="n3docs">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END n3docs_fieldblock}
+											
+{BEGIN tribcellenffem_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribcellenffem}  r-vertical-field" 
+	data-fieldname="tribcellenffem" 
+	data-signal-error-for="tribcellenffem{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="tribcellenffem" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tribcellenffem}">
+		{BEGIN tribcellenffem_label}{$label t_dossier tribcellenffem }{END tribcellenffem_label}
+	</label>
+	<div class="r-edit-field">
+		{$tribcellenffem_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tribcellenffem">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tribcellenffem_fieldblock}
+											
+{BEGIN tribpression_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribpression}  r-vertical-field" 
+	data-fieldname="tribpression" 
+	data-signal-error-for="tribpression{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="tribpression" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_tribpression}">
+		{BEGIN tribpression_label}{$label t_dossier tribpression }{END tribpression_label}
+	</label>
+	<div class="r-edit-field">
+		{$tribpression_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="tribpression">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END tribpression_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c1}
+								</tr>
+			</tbody></table>
+{END section8_block}
+		  </div>
+		</div>
+	</div>
+	
+				{END section3_block}
+		  </div>
+		</div>
+	</div>
+											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN remarques_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remarques}  r-vertical-field" 
+	data-fieldname="remarques" 
+	data-signal-error-for="remarques{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="remarques" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_remarques}">
+		{BEGIN remarques_label}{$label t_dossier remarques }{END remarques_label}
+	</label>
+	<div class="r-edit-field">
+		{$remarques_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="remarques">
+		<div class="text-muted" >
+				</div>
+	</div>
+</div>
+
+
+{END remarques_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							حفظ			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							رجوع إلى القائمة			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							إلغاء			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

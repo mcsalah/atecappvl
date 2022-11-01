@@ -1,0 +1,1016 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel t_dossier search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN num_dossier_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_num_dossier}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="num_dossier" 
+	
+	data-signal-error-for="num_dossier{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="num_dossier" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_num_dossier}">
+		{$label t_dossier num_dossier }	</label>
+	<div class="r-search-option">
+		{$searchtype_num_dossier}
+	</div>
+	<div class="r-search-field">
+		{$num_dossier_editcontrol}	</div>
+	<div class="r-search-field">
+		{$num_dossier_editcontrol1}
+	</div>
+	
+</div>
+
+{END num_dossier_fieldblock}
+											
+{BEGIN nom_assist_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nom_assist}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="nom_assist" 
+	
+	data-signal-error-for="nom_assist{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="nom_assist" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_nom_assist}">
+		{$label t_dossier nom_assist }	</label>
+	<div class="r-search-option">
+		{$searchtype_nom_assist}
+	</div>
+	<div class="r-search-field">
+		{$nom_assist_editcontrol}	</div>
+	<div class="r-search-field">
+		{$nom_assist_editcontrol1}
+	</div>
+	
+</div>
+
+{END nom_assist_fieldblock}
+											
+{BEGIN SourceInfo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SourceInfo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="SourceInfo" 
+	
+	data-signal-error-for="SourceInfo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="SourceInfo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_SourceInfo}">
+		{$label t_dossier SourceInfo }	</label>
+	<div class="r-search-option">
+		{$searchtype_SourceInfo}
+	</div>
+	<div class="r-search-field">
+		{$SourceInfo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$SourceInfo_editcontrol1}
+	</div>
+	
+</div>
+
+{END SourceInfo_fieldblock}
+											
+{BEGIN Date_ecoute_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Date_ecoute}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Date_ecoute" 
+	
+	data-signal-error-for="Date_ecoute{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="Date_ecoute" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Date_ecoute}">
+		{$label t_dossier Date_ecoute }	</label>
+	<div class="r-search-option">
+		{$searchtype_Date_ecoute}
+	</div>
+	<div class="r-search-field">
+		{$Date_ecoute_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Date_ecoute_editcontrol1}
+	</div>
+	
+</div>
+
+{END Date_ecoute_fieldblock}
+											
+{BEGIN vcin_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_vcin}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="vcin" 
+	
+	data-signal-error-for="vcin{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="vcin" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_vcin}">
+		{$label t_dossier vcin }	</label>
+	<div class="r-search-option">
+		{$searchtype_vcin}
+	</div>
+	<div class="r-search-field">
+		{$vcin_editcontrol}	</div>
+	<div class="r-search-field">
+		{$vcin_editcontrol1}
+	</div>
+	
+</div>
+
+{END vcin_fieldblock}
+											
+{BEGIN victime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_victime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="victime" 
+	
+	data-signal-error-for="victime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="victime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_victime}">
+		{$label t_dossier victime }	</label>
+	<div class="r-search-option">
+		{$searchtype_victime}
+	</div>
+	<div class="r-search-field">
+		{$victime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$victime_editcontrol1}
+	</div>
+	
+</div>
+
+{END victime_fieldblock}
+											
+{BEGIN coupable_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_coupable}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="coupable" 
+	
+	data-signal-error-for="coupable{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="coupable" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_coupable}">
+		{$label t_dossier coupable }	</label>
+	<div class="r-search-option">
+		{$searchtype_coupable}
+	</div>
+	<div class="r-search-field">
+		{$coupable_editcontrol}	</div>
+	<div class="r-search-field">
+		{$coupable_editcontrol1}
+	</div>
+	
+</div>
+
+{END coupable_fieldblock}
+											
+{BEGIN rel_coup_victime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rel_coup_victime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="rel_coup_victime" 
+	
+	data-signal-error-for="rel_coup_victime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="rel_coup_victime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rel_coup_victime}">
+		{$label t_dossier rel_coup_victime }	</label>
+	<div class="r-search-option">
+		{$searchtype_rel_coup_victime}
+	</div>
+	<div class="r-search-field">
+		{$rel_coup_victime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rel_coup_victime_editcontrol1}
+	</div>
+	
+</div>
+
+{END rel_coup_victime_fieldblock}
+											
+{BEGIN date_viol_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_viol}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="date_viol" 
+	
+	data-signal-error-for="date_viol{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="date_viol" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_date_viol}">
+		{$label t_dossier date_viol }	</label>
+	<div class="r-search-option">
+		{$searchtype_date_viol}
+	</div>
+	<div class="r-search-field">
+		{$date_viol_editcontrol}	</div>
+	<div class="r-search-field">
+		{$date_viol_editcontrol1}
+	</div>
+	
+</div>
+
+{END date_viol_fieldblock}
+											
+{BEGIN viol_eco_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_eco}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="viol_eco" 
+	
+	data-signal-error-for="viol_eco{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="viol_eco" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_viol_eco}">
+		{$label t_dossier viol_eco }	</label>
+	<div class="r-search-option">
+		{$searchtype_viol_eco}
+	</div>
+	<div class="r-search-field">
+		{$viol_eco_editcontrol}	</div>
+	<div class="r-search-field">
+		{$viol_eco_editcontrol1}
+	</div>
+	
+</div>
+
+{END viol_eco_fieldblock}
+											
+{BEGIN viol_corp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_corp}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="viol_corp" 
+	
+	data-signal-error-for="viol_corp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="viol_corp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_viol_corp}">
+		{$label t_dossier viol_corp }	</label>
+	<div class="r-search-option">
+		{$searchtype_viol_corp}
+	</div>
+	<div class="r-search-field">
+		{$viol_corp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$viol_corp_editcontrol1}
+	</div>
+	
+</div>
+
+{END viol_corp_fieldblock}
+											
+{BEGIN viol_sexuel_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_sexuel}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="viol_sexuel" 
+	
+	data-signal-error-for="viol_sexuel{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="viol_sexuel" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_viol_sexuel}">
+		{$label t_dossier viol_sexuel }	</label>
+	<div class="r-search-option">
+		{$searchtype_viol_sexuel}
+	</div>
+	<div class="r-search-field">
+		{$viol_sexuel_editcontrol}	</div>
+	<div class="r-search-field">
+		{$viol_sexuel_editcontrol1}
+	</div>
+	
+</div>
+
+{END viol_sexuel_fieldblock}
+											
+{BEGIN viol_psych_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_psych}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="viol_psych" 
+	
+	data-signal-error-for="viol_psych{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="viol_psych" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_viol_psych}">
+		{$label t_dossier viol_psych }	</label>
+	<div class="r-search-option">
+		{$searchtype_viol_psych}
+	</div>
+	<div class="r-search-field">
+		{$viol_psych_editcontrol}	</div>
+	<div class="r-search-field">
+		{$viol_psych_editcontrol1}
+	</div>
+	
+</div>
+
+{END viol_psych_fieldblock}
+											
+{BEGIN viol_juris_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_viol_juris}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="viol_juris" 
+	
+	data-signal-error-for="viol_juris{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="viol_juris" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_viol_juris}">
+		{$label t_dossier viol_juris }	</label>
+	<div class="r-search-option">
+		{$searchtype_viol_juris}
+	</div>
+	<div class="r-search-field">
+		{$viol_juris_editcontrol}	</div>
+	<div class="r-search-field">
+		{$viol_juris_editcontrol1}
+	</div>
+	
+</div>
+
+{END viol_juris_fieldblock}
+											
+{BEGIN conseq_corp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_corp}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="conseq_corp" 
+	
+	data-signal-error-for="conseq_corp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="conseq_corp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_conseq_corp}">
+		{$label t_dossier conseq_corp }	</label>
+	<div class="r-search-option">
+		{$searchtype_conseq_corp}
+	</div>
+	<div class="r-search-field">
+		{$conseq_corp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$conseq_corp_editcontrol1}
+	</div>
+	
+</div>
+
+{END conseq_corp_fieldblock}
+											
+{BEGIN consequ_psych_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_consequ_psych}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="consequ_psych" 
+	
+	data-signal-error-for="consequ_psych{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="consequ_psych" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_consequ_psych}">
+		{$label t_dossier consequ_psych }	</label>
+	<div class="r-search-option">
+		{$searchtype_consequ_psych}
+	</div>
+	<div class="r-search-field">
+		{$consequ_psych_editcontrol}	</div>
+	<div class="r-search-field">
+		{$consequ_psych_editcontrol1}
+	</div>
+	
+</div>
+
+{END consequ_psych_fieldblock}
+											
+{BEGIN conseq_enf_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_enf}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="conseq_enf" 
+	
+	data-signal-error-for="conseq_enf{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="conseq_enf" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_conseq_enf}">
+		{$label t_dossier conseq_enf }	</label>
+	<div class="r-search-option">
+		{$searchtype_conseq_enf}
+	</div>
+	<div class="r-search-field">
+		{$conseq_enf_editcontrol}	</div>
+	<div class="r-search-field">
+		{$conseq_enf_editcontrol1}
+	</div>
+	
+</div>
+
+{END conseq_enf_fieldblock}
+											
+{BEGIN demand_vict_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_demand_vict}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="demand_vict" 
+	
+	data-signal-error-for="demand_vict{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="demand_vict" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_demand_vict}">
+		{$label t_dossier demand_vict }	</label>
+	<div class="r-search-option">
+		{$searchtype_demand_vict}
+	</div>
+	<div class="r-search-field">
+		{$demand_vict_editcontrol}	</div>
+	<div class="r-search-field">
+		{$demand_vict_editcontrol1}
+	</div>
+	
+</div>
+
+{END demand_vict_fieldblock}
+											
+{BEGIN svce_prop_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_svce_prop}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="svce_prop" 
+	
+	data-signal-error-for="svce_prop{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="svce_prop" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_svce_prop}">
+		{$label t_dossier svce_prop }	</label>
+	<div class="r-search-option">
+		{$searchtype_svce_prop}
+	</div>
+	<div class="r-search-field">
+		{$svce_prop_editcontrol}	</div>
+	<div class="r-search-field">
+		{$svce_prop_editcontrol1}
+	</div>
+	
+</div>
+
+{END svce_prop_fieldblock}
+											
+{BEGIN ms3cellenffem_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3cellenffem}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ms3cellenffem" 
+	
+	data-signal-error-for="ms3cellenffem{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="ms3cellenffem" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ms3cellenffem}">
+		{$label t_dossier ms3cellenffem }	</label>
+	<div class="r-search-option">
+		{$searchtype_ms3cellenffem}
+	</div>
+	<div class="r-search-field">
+		{$ms3cellenffem_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ms3cellenffem_editcontrol1}
+	</div>
+	
+</div>
+
+{END ms3cellenffem_fieldblock}
+											
+{BEGIN ms3oblpaye_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3oblpaye}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ms3oblpaye" 
+	
+	data-signal-error-for="ms3oblpaye{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="ms3oblpaye" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ms3oblpaye}">
+		{$label t_dossier ms3oblpaye }	</label>
+	<div class="r-search-option">
+		{$searchtype_ms3oblpaye}
+	</div>
+	<div class="r-search-field">
+		{$ms3oblpaye_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ms3oblpaye_editcontrol1}
+	</div>
+	
+</div>
+
+{END ms3oblpaye_fieldblock}
+											
+{BEGIN ms3obstacles_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ms3obstacles}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ms3obstacles" 
+	
+	data-signal-error-for="ms3obstacles{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="ms3obstacles" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ms3obstacles}">
+		{$label t_dossier ms3obstacles }	</label>
+	<div class="r-search-option">
+		{$searchtype_ms3obstacles}
+	</div>
+	<div class="r-search-field">
+		{$ms3obstacles_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ms3obstacles_editcontrol1}
+	</div>
+	
+</div>
+
+{END ms3obstacles_fieldblock}
+											
+{BEGIN sachcellenffem_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sachcellenffem}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="sachcellenffem" 
+	
+	data-signal-error-for="sachcellenffem{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="sachcellenffem" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sachcellenffem}">
+		{$label t_dossier sachcellenffem }	</label>
+	<div class="r-search-option">
+		{$searchtype_sachcellenffem}
+	</div>
+	<div class="r-search-field">
+		{$sachcellenffem_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sachcellenffem_editcontrol1}
+	</div>
+	
+</div>
+
+{END sachcellenffem_fieldblock}
+											
+{BEGIN sachcopyrap_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sachcopyrap}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="sachcopyrap" 
+	
+	data-signal-error-for="sachcopyrap{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="sachcopyrap" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sachcopyrap}">
+		{$label t_dossier sachcopyrap }	</label>
+	<div class="r-search-option">
+		{$searchtype_sachcopyrap}
+	</div>
+	<div class="r-search-field">
+		{$sachcopyrap_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sachcopyrap_editcontrol1}
+	</div>
+	
+</div>
+
+{END sachcopyrap_fieldblock}
+											
+{BEGIN rapporoui_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rapporoui}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="rapporoui" 
+	
+	data-signal-error-for="rapporoui{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="rapporoui" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rapporoui}">
+		{$label t_dossier rapporoui }	</label>
+	<div class="r-search-option">
+		{$searchtype_rapporoui}
+	</div>
+	<div class="r-search-field">
+		{$rapporoui_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rapporoui_editcontrol1}
+	</div>
+	
+</div>
+
+{END rapporoui_fieldblock}
+											
+{BEGIN encscepublic_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_encscepublic}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="encscepublic" 
+	
+	data-signal-error-for="encscepublic{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="encscepublic" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_encscepublic}">
+		{$label t_dossier encscepublic }	</label>
+	<div class="r-search-option">
+		{$searchtype_encscepublic}
+	</div>
+	<div class="r-search-field">
+		{$encscepublic_editcontrol}	</div>
+	<div class="r-search-field">
+		{$encscepublic_editcontrol1}
+	</div>
+	
+</div>
+
+{END encscepublic_fieldblock}
+											
+{BEGIN encscpuboui_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_encscpuboui}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="encscpuboui" 
+	
+	data-signal-error-for="encscpuboui{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="encscpuboui" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_encscpuboui}">
+		{$label t_dossier encscpuboui }	</label>
+	<div class="r-search-option">
+		{$searchtype_encscpuboui}
+	</div>
+	<div class="r-search-field">
+		{$encscpuboui_editcontrol}	</div>
+	<div class="r-search-field">
+		{$encscpuboui_editcontrol1}
+	</div>
+	
+</div>
+
+{END encscpuboui_fieldblock}
+											
+{BEGIN n3cellenffem_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3cellenffem}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="n3cellenffem" 
+	
+	data-signal-error-for="n3cellenffem{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="n3cellenffem" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_n3cellenffem}">
+		{$label t_dossier n3cellenffem }	</label>
+	<div class="r-search-option">
+		{$searchtype_n3cellenffem}
+	</div>
+	<div class="r-search-field">
+		{$n3cellenffem_editcontrol}	</div>
+	<div class="r-search-field">
+		{$n3cellenffem_editcontrol1}
+	</div>
+	
+</div>
+
+{END n3cellenffem_fieldblock}
+											
+{BEGIN n3pression_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3pression}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="n3pression" 
+	
+	data-signal-error-for="n3pression{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="n3pression" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_n3pression}">
+		{$label t_dossier n3pression }	</label>
+	<div class="r-search-option">
+		{$searchtype_n3pression}
+	</div>
+	<div class="r-search-field">
+		{$n3pression_editcontrol}	</div>
+	<div class="r-search-field">
+		{$n3pression_editcontrol1}
+	</div>
+	
+</div>
+
+{END n3pression_fieldblock}
+											
+{BEGIN n3docs_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_n3docs}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="n3docs" 
+	
+	data-signal-error-for="n3docs{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field33" {$item_integrated_search_field33} data-pageid="{$pageid}" data-field="n3docs" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_n3docs}">
+		{$label t_dossier n3docs }	</label>
+	<div class="r-search-option">
+		{$searchtype_n3docs}
+	</div>
+	<div class="r-search-field">
+		{$n3docs_editcontrol}	</div>
+	<div class="r-search-field">
+		{$n3docs_editcontrol1}
+	</div>
+	
+</div>
+
+{END n3docs_fieldblock}
+											
+{BEGIN tribcellenffem_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribcellenffem}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="tribcellenffem" 
+	
+	data-signal-error-for="tribcellenffem{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field34" {$item_integrated_search_field34} data-pageid="{$pageid}" data-field="tribcellenffem" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tribcellenffem}">
+		{$label t_dossier tribcellenffem }	</label>
+	<div class="r-search-option">
+		{$searchtype_tribcellenffem}
+	</div>
+	<div class="r-search-field">
+		{$tribcellenffem_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tribcellenffem_editcontrol1}
+	</div>
+	
+</div>
+
+{END tribcellenffem_fieldblock}
+											
+{BEGIN tribpression_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribpression}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="tribpression" 
+	
+	data-signal-error-for="tribpression{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field35" {$item_integrated_search_field35} data-pageid="{$pageid}" data-field="tribpression" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tribpression}">
+		{$label t_dossier tribpression }	</label>
+	<div class="r-search-option">
+		{$searchtype_tribpression}
+	</div>
+	<div class="r-search-field">
+		{$tribpression_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tribpression_editcontrol1}
+	</div>
+	
+</div>
+
+{END tribpression_fieldblock}
+											
+{BEGIN tribobligpaye_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tribobligpaye}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="tribobligpaye" 
+	
+	data-signal-error-for="tribobligpaye{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field36" {$item_integrated_search_field36} data-pageid="{$pageid}" data-field="tribobligpaye" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tribobligpaye}">
+		{$label t_dossier tribobligpaye }	</label>
+	<div class="r-search-option">
+		{$searchtype_tribobligpaye}
+	</div>
+	<div class="r-search-field">
+		{$tribobligpaye_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tribobligpaye_editcontrol1}
+	</div>
+	
+</div>
+
+{END tribobligpaye_fieldblock}
+											
+{BEGIN remarques_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remarques}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="remarques" 
+	
+	data-signal-error-for="remarques{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field37" {$item_integrated_search_field37} data-pageid="{$pageid}" data-field="remarques" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remarques}">
+		{$label t_dossier remarques }	</label>
+	<div class="r-search-option">
+		{$searchtype_remarques}
+	</div>
+	<div class="r-search-field">
+		{$remarques_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remarques_editcontrol1}
+	</div>
+	
+</div>
+
+{END remarques_fieldblock}
+											
+{BEGIN conseq_ecosocial_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_conseq_ecosocial}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="conseq_ecosocial" 
+	
+	data-signal-error-for="conseq_ecosocial{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="conseq_ecosocial" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_conseq_ecosocial}">
+		{$label t_dossier conseq_ecosocial }	</label>
+	<div class="r-search-option">
+		{$searchtype_conseq_ecosocial}
+	</div>
+	<div class="r-search-field">
+		{$conseq_ecosocial_editcontrol}	</div>
+	<div class="r-search-field">
+		{$conseq_ecosocial_editcontrol1}
+	</div>
+	
+</div>
+
+{END conseq_ecosocial_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							بحث			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							تفريغ الحقول			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							رجوع إلى القائمة			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							إلغاء			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

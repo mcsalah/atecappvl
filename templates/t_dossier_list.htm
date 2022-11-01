@@ -1,0 +1,3534 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			بحث في			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>تظهر خيارات</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>كل الظروف</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>أي حالة</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>إخفاء</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_Date_ecoute}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_Date_ecoute}" {$filterRow_attrs_Date_ecoute}>
+			<label>{$label t_dossier Date_ecoute }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_Date_ecoute}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Date_ecoute}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Date_ecoute}</span>
+						</div>
+		{END searchCtrlBlock_Date_ecoute}
+																{BEGIN searchCtrlBlock_conseq_ecosocial}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_conseq_ecosocial}" {$filterRow_attrs_conseq_ecosocial}>
+			<label>{$label t_dossier conseq_ecosocial }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_conseq_ecosocial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_conseq_ecosocial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_conseq_ecosocial}</span>
+						</div>
+		{END searchCtrlBlock_conseq_ecosocial}
+																{BEGIN searchCtrlBlock_viol_sexuel}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_viol_sexuel}" {$filterRow_attrs_viol_sexuel}>
+			<label>{$label t_dossier viol_sexuel }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_viol_sexuel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_viol_sexuel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_viol_sexuel}</span>
+						</div>
+		{END searchCtrlBlock_viol_sexuel}
+																{BEGIN searchCtrlBlock_viol_psych}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_viol_psych}" {$filterRow_attrs_viol_psych}>
+			<label>{$label t_dossier viol_psych }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_viol_psych}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_viol_psych}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_viol_psych}</span>
+						</div>
+		{END searchCtrlBlock_viol_psych}
+																{BEGIN searchCtrlBlock_viol_juris}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_viol_juris}" {$filterRow_attrs_viol_juris}>
+			<label>{$label t_dossier viol_juris }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_viol_juris}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_viol_juris}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_viol_juris}</span>
+						</div>
+		{END searchCtrlBlock_viol_juris}
+																{BEGIN searchCtrlBlock_viol_eco}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_viol_eco}" {$filterRow_attrs_viol_eco}>
+			<label>{$label t_dossier viol_eco }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_viol_eco}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_viol_eco}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_viol_eco}</span>
+						</div>
+		{END searchCtrlBlock_viol_eco}
+																{BEGIN searchCtrlBlock_viol_corp}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_viol_corp}" {$filterRow_attrs_viol_corp}>
+			<label>{$label t_dossier viol_corp }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_viol_corp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_viol_corp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_viol_corp}</span>
+						</div>
+		{END searchCtrlBlock_viol_corp}
+																{BEGIN searchCtrlBlock_victime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_victime}" {$filterRow_attrs_victime}>
+			<label>{$label t_dossier victime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_victime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_victime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_victime}</span>
+						</div>
+		{END searchCtrlBlock_victime}
+																{BEGIN searchCtrlBlock_vcin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vcin}" {$filterRow_attrs_vcin}>
+			<label>{$label t_dossier vcin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vcin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vcin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vcin}</span>
+						</div>
+		{END searchCtrlBlock_vcin}
+																{BEGIN searchCtrlBlock_tribpression}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tribpression}" {$filterRow_attrs_tribpression}>
+			<label>{$label t_dossier tribpression }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tribpression}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tribpression}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tribpression}</span>
+						</div>
+		{END searchCtrlBlock_tribpression}
+																{BEGIN searchCtrlBlock_tribobligpaye}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tribobligpaye}" {$filterRow_attrs_tribobligpaye}>
+			<label>{$label t_dossier tribobligpaye }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tribobligpaye}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tribobligpaye}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tribobligpaye}</span>
+						</div>
+		{END searchCtrlBlock_tribobligpaye}
+																{BEGIN searchCtrlBlock_tribcellenffem}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tribcellenffem}" {$filterRow_attrs_tribcellenffem}>
+			<label>{$label t_dossier tribcellenffem }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tribcellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tribcellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tribcellenffem}</span>
+						</div>
+		{END searchCtrlBlock_tribcellenffem}
+																{BEGIN searchCtrlBlock_svce_prop}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_svce_prop}" {$filterRow_attrs_svce_prop}>
+			<label>{$label t_dossier svce_prop }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_svce_prop}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_svce_prop}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_svce_prop}</span>
+						</div>
+		{END searchCtrlBlock_svce_prop}
+																{BEGIN searchCtrlBlock_sachcopyrap}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sachcopyrap}" {$filterRow_attrs_sachcopyrap}>
+			<label>{$label t_dossier sachcopyrap }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sachcopyrap}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sachcopyrap}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sachcopyrap}</span>
+						</div>
+		{END searchCtrlBlock_sachcopyrap}
+																{BEGIN searchCtrlBlock_sachcellenffem}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_sachcellenffem}" {$filterRow_attrs_sachcellenffem}>
+			<label>{$label t_dossier sachcellenffem }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_sachcellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_sachcellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_sachcellenffem}</span>
+						</div>
+		{END searchCtrlBlock_sachcellenffem}
+																{BEGIN searchCtrlBlock_remarques}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_remarques}" {$filterRow_attrs_remarques}>
+			<label>{$label t_dossier remarques }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_remarques}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_remarques}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_remarques}</span>
+						</div>
+		{END searchCtrlBlock_remarques}
+																{BEGIN searchCtrlBlock_rel_coup_victime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rel_coup_victime}" {$filterRow_attrs_rel_coup_victime}>
+			<label>{$label t_dossier rel_coup_victime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_rel_coup_victime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rel_coup_victime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_rel_coup_victime}</span>
+						</div>
+		{END searchCtrlBlock_rel_coup_victime}
+																{BEGIN searchCtrlBlock_rapporoui}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_rapporoui}" {$filterRow_attrs_rapporoui}>
+			<label>{$label t_dossier rapporoui }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_rapporoui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_rapporoui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_rapporoui}</span>
+						</div>
+		{END searchCtrlBlock_rapporoui}
+																{BEGIN searchCtrlBlock_num_dossier}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_num_dossier}" {$filterRow_attrs_num_dossier}>
+			<label>{$label t_dossier num_dossier }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_num_dossier}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_num_dossier}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_num_dossier}</span>
+						</div>
+		{END searchCtrlBlock_num_dossier}
+																{BEGIN searchCtrlBlock_nom_assist}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nom_assist}" {$filterRow_attrs_nom_assist}>
+			<label>{$label t_dossier nom_assist }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nom_assist}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nom_assist}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nom_assist}</span>
+						</div>
+		{END searchCtrlBlock_nom_assist}
+																{BEGIN searchCtrlBlock_n3pression}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_n3pression}" {$filterRow_attrs_n3pression}>
+			<label>{$label t_dossier n3pression }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_n3pression}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_n3pression}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_n3pression}</span>
+						</div>
+		{END searchCtrlBlock_n3pression}
+																{BEGIN searchCtrlBlock_n3docs}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_n3docs}" {$filterRow_attrs_n3docs}>
+			<label>{$label t_dossier n3docs }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_n3docs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_n3docs}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_n3docs}</span>
+						</div>
+		{END searchCtrlBlock_n3docs}
+																{BEGIN searchCtrlBlock_n3cellenffem}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_n3cellenffem}" {$filterRow_attrs_n3cellenffem}>
+			<label>{$label t_dossier n3cellenffem }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_n3cellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_n3cellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_n3cellenffem}</span>
+						</div>
+		{END searchCtrlBlock_n3cellenffem}
+																{BEGIN searchCtrlBlock_ms3obstacles}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ms3obstacles}" {$filterRow_attrs_ms3obstacles}>
+			<label>{$label t_dossier ms3obstacles }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ms3obstacles}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ms3obstacles}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ms3obstacles}</span>
+						</div>
+		{END searchCtrlBlock_ms3obstacles}
+																{BEGIN searchCtrlBlock_ms3oblpaye}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ms3oblpaye}" {$filterRow_attrs_ms3oblpaye}>
+			<label>{$label t_dossier ms3oblpaye }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ms3oblpaye}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ms3oblpaye}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ms3oblpaye}</span>
+						</div>
+		{END searchCtrlBlock_ms3oblpaye}
+																{BEGIN searchCtrlBlock_ms3cellenffem}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ms3cellenffem}" {$filterRow_attrs_ms3cellenffem}>
+			<label>{$label t_dossier ms3cellenffem }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ms3cellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ms3cellenffem}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ms3cellenffem}</span>
+						</div>
+		{END searchCtrlBlock_ms3cellenffem}
+																{BEGIN searchCtrlBlock_encscpuboui}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_encscpuboui}" {$filterRow_attrs_encscpuboui}>
+			<label>{$label t_dossier encscpuboui }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_encscpuboui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_encscpuboui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_encscpuboui}</span>
+						</div>
+		{END searchCtrlBlock_encscpuboui}
+																{BEGIN searchCtrlBlock_encscepublic}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_encscepublic}" {$filterRow_attrs_encscepublic}>
+			<label>{$label t_dossier encscepublic }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_encscepublic}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_encscepublic}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_encscepublic}</span>
+						</div>
+		{END searchCtrlBlock_encscepublic}
+																{BEGIN searchCtrlBlock_demand_vict}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_demand_vict}" {$filterRow_attrs_demand_vict}>
+			<label>{$label t_dossier demand_vict }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_demand_vict}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_demand_vict}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_demand_vict}</span>
+						</div>
+		{END searchCtrlBlock_demand_vict}
+																{BEGIN searchCtrlBlock_date_viol}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_date_viol}" {$filterRow_attrs_date_viol}>
+			<label>{$label t_dossier date_viol }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_date_viol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_date_viol}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_date_viol}</span>
+						</div>
+		{END searchCtrlBlock_date_viol}
+																{BEGIN searchCtrlBlock_coupable}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_coupable}" {$filterRow_attrs_coupable}>
+			<label>{$label t_dossier coupable }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_coupable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_coupable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_coupable}</span>
+						</div>
+		{END searchCtrlBlock_coupable}
+																{BEGIN searchCtrlBlock_consequ_psych}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_consequ_psych}" {$filterRow_attrs_consequ_psych}>
+			<label>{$label t_dossier consequ_psych }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_consequ_psych}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_consequ_psych}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_consequ_psych}</span>
+						</div>
+		{END searchCtrlBlock_consequ_psych}
+																{BEGIN searchCtrlBlock_conseq_enf}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_conseq_enf}" {$filterRow_attrs_conseq_enf}>
+			<label>{$label t_dossier conseq_enf }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_conseq_enf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_conseq_enf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_conseq_enf}</span>
+						</div>
+		{END searchCtrlBlock_conseq_enf}
+																{BEGIN searchCtrlBlock_conseq_corp}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_conseq_corp}" {$filterRow_attrs_conseq_corp}>
+			<label>{$label t_dossier conseq_corp }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_conseq_corp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_conseq_corp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_conseq_corp}</span>
+						</div>
+		{END searchCtrlBlock_conseq_corp}
+																{BEGIN searchCtrlBlock_SourceInfo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_SourceInfo}" {$filterRow_attrs_SourceInfo}>
+			<label>{$label t_dossier SourceInfo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_SourceInfo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_SourceInfo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_SourceInfo}</span>
+						</div>
+		{END searchCtrlBlock_SourceInfo}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>بحث</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>أظهر الكل</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>	
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="أظهر الكل">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		تصدير الجزء المحدد		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		مسح المنتقى		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="t_dossier_search.php" {$advsearchlink_attrs}  title="" >
+				
+		بحث متقدم		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		عرض لوحة البحث		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		إخفاء لوحة البحث		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		تصدير النَتائج		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="t_dossier_import.php?{$crosstable_attrs}"  title="" >
+				
+		استيراد		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							تسجيل الدخول			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		تسجيل الخروج		
+		</a>
+	</li>
+{END logoutbutton}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="t_dossier_add.php" >
+							إضافة			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							مسح			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="تهيئة الصفحة لطباعة" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			نطاق:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="t_dossier_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									طباعة جميع الصفحات							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="t_dossier_print.php?{$crosstable_attrs}">
+				إطبع هذه الصفحة			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			طباعة المحدد			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					عدد السجلات بالصفحة							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							طباعة			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="num_dossier"]:before {
+		content: "{$label t_dossier num_dossier}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nom_assist"]:before {
+		content: "{$label t_dossier nom_assist}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="SourceInfo"]:before {
+		content: "{$label t_dossier SourceInfo}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Date_ecoute"]:before {
+		content: "{$label t_dossier Date_ecoute}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vcin"]:before {
+		content: "{$label t_dossier vcin}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="victime"]:before {
+		content: "{$label t_dossier victime}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="coupable"]:before {
+		content: "{$label t_dossier coupable}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rel_coup_victime"]:before {
+		content: "{$label t_dossier rel_coup_victime}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="date_viol"]:before {
+		content: "{$label t_dossier date_viol}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="viol_eco"]:before {
+		content: "{$label t_dossier viol_eco}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="viol_corp"]:before {
+		content: "{$label t_dossier viol_corp}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="viol_sexuel"]:before {
+		content: "{$label t_dossier viol_sexuel}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="viol_psych"]:before {
+		content: "{$label t_dossier viol_psych}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="viol_juris"]:before {
+		content: "{$label t_dossier viol_juris}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="conseq_corp"]:before {
+		content: "{$label t_dossier conseq_corp}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="consequ_psych"]:before {
+		content: "{$label t_dossier consequ_psych}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="conseq_ecosocial"]:before {
+		content: "{$label t_dossier conseq_ecosocial}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="conseq_enf"]:before {
+		content: "{$label t_dossier conseq_enf}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="demand_vict"]:before {
+		content: "{$label t_dossier demand_vict}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="svce_prop"]:before {
+		content: "{$label t_dossier svce_prop}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ms3cellenffem"]:before {
+		content: "{$label t_dossier ms3cellenffem}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ms3oblpaye"]:before {
+		content: "{$label t_dossier ms3oblpaye}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ms3obstacles"]:before {
+		content: "{$label t_dossier ms3obstacles}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sachcellenffem"]:before {
+		content: "{$label t_dossier sachcellenffem}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sachcopyrap"]:before {
+		content: "{$label t_dossier sachcopyrap}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="rapporoui"]:before {
+		content: "{$label t_dossier rapporoui}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="encscepublic"]:before {
+		content: "{$label t_dossier encscepublic}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="encscpuboui"]:before {
+		content: "{$label t_dossier encscpuboui}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="n3cellenffem"]:before {
+		content: "{$label t_dossier n3cellenffem}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="n3pression"]:before {
+		content: "{$label t_dossier n3pression}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="n3docs"]:before {
+		content: "{$label t_dossier n3docs}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tribcellenffem"]:before {
+		content: "{$label t_dossier tribcellenffem}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tribpression"]:before {
+		content: "{$label t_dossier tribpression}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tribobligpaye"]:before {
+		content: "{$label t_dossier tribobligpaye}";
+	}
+	
+	[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="remarques"]:before {
+		content: "{$label t_dossier remarques}";
+	}
+	
+}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$num_dossier_class}
+			"
+
+			data-field="num_dossier"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN num_dossier_fieldheadercolumn}
+	{BEGIN num_dossier_fieldheader}
+	<SPAN {$num_dossier_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="num_dossier">
+	{$label t_dossier num_dossier }	{$arrow_icon_num_dossier}
+	</SPAN>
+	{END num_dossier_fieldheader}
+{END num_dossier_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nom_assist_class}
+			"
+
+			data-field="nom_assist"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nom_assist_fieldheadercolumn}
+	{BEGIN nom_assist_fieldheader}
+	<SPAN {$nom_assist_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom_assist">
+	{$label t_dossier nom_assist }	{$arrow_icon_nom_assist}
+	</SPAN>
+	{END nom_assist_fieldheader}
+{END nom_assist_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SourceInfo_class}
+			"
+
+			data-field="SourceInfo"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SourceInfo_fieldheadercolumn}
+	{BEGIN SourceInfo_fieldheader}
+	<SPAN {$SourceInfo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SourceInfo">
+	{$label t_dossier SourceInfo }	{$arrow_icon_SourceInfo}
+	</SPAN>
+	{END SourceInfo_fieldheader}
+{END SourceInfo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Date_ecoute_class}
+			"
+
+			data-field="Date_ecoute"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Date_ecoute_fieldheadercolumn}
+	{BEGIN Date_ecoute_fieldheader}
+	<SPAN {$Date_ecoute_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Date_ecoute">
+	{$label t_dossier Date_ecoute }	{$arrow_icon_Date_ecoute}
+	</SPAN>
+	{END Date_ecoute_fieldheader}
+{END Date_ecoute_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vcin_class}
+			"
+
+			data-field="vcin"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vcin_fieldheadercolumn}
+	{BEGIN vcin_fieldheader}
+	<SPAN {$vcin_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vcin">
+	{$label t_dossier vcin }	{$arrow_icon_vcin}
+	</SPAN>
+	{END vcin_fieldheader}
+{END vcin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$victime_class}
+			"
+
+			data-field="victime"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN victime_fieldheadercolumn}
+	{BEGIN victime_fieldheader}
+	<SPAN {$victime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="victime">
+	{$label t_dossier victime }	{$arrow_icon_victime}
+	</SPAN>
+	{END victime_fieldheader}
+{END victime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$coupable_class}
+			"
+
+			data-field="coupable"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN coupable_fieldheadercolumn}
+	{BEGIN coupable_fieldheader}
+	<SPAN {$coupable_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="coupable">
+	{$label t_dossier coupable }	{$arrow_icon_coupable}
+	</SPAN>
+	{END coupable_fieldheader}
+{END coupable_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rel_coup_victime_class}
+			"
+
+			data-field="rel_coup_victime"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rel_coup_victime_fieldheadercolumn}
+	{BEGIN rel_coup_victime_fieldheader}
+	<SPAN {$rel_coup_victime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rel_coup_victime">
+	{$label t_dossier rel_coup_victime }	{$arrow_icon_rel_coup_victime}
+	</SPAN>
+	{END rel_coup_victime_fieldheader}
+{END rel_coup_victime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$date_viol_class}
+			"
+
+			data-field="date_viol"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_viol_fieldheadercolumn}
+	{BEGIN date_viol_fieldheader}
+	<SPAN {$date_viol_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_viol">
+	{$label t_dossier date_viol }	{$arrow_icon_date_viol}
+	</SPAN>
+	{END date_viol_fieldheader}
+{END date_viol_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_eco_class}
+			"
+
+			data-field="viol_eco"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_eco_fieldheadercolumn}
+	{BEGIN viol_eco_fieldheader}
+	<SPAN {$viol_eco_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_eco">
+	{$label t_dossier viol_eco }	{$arrow_icon_viol_eco}
+	</SPAN>
+	{END viol_eco_fieldheader}
+{END viol_eco_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_corp_class}
+			"
+
+			data-field="viol_corp"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_corp_fieldheadercolumn}
+	{BEGIN viol_corp_fieldheader}
+	<SPAN {$viol_corp_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_corp">
+	{$label t_dossier viol_corp }	{$arrow_icon_viol_corp}
+	</SPAN>
+	{END viol_corp_fieldheader}
+{END viol_corp_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_sexuel_class}
+			"
+
+			data-field="viol_sexuel"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_sexuel_fieldheadercolumn}
+	{BEGIN viol_sexuel_fieldheader}
+	<SPAN {$viol_sexuel_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_sexuel">
+	{$label t_dossier viol_sexuel }	{$arrow_icon_viol_sexuel}
+	</SPAN>
+	{END viol_sexuel_fieldheader}
+{END viol_sexuel_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_psych_class}
+			"
+
+			data-field="viol_psych"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_psych_fieldheadercolumn}
+	{BEGIN viol_psych_fieldheader}
+	<SPAN {$viol_psych_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_psych">
+	{$label t_dossier viol_psych }	{$arrow_icon_viol_psych}
+	</SPAN>
+	{END viol_psych_fieldheader}
+{END viol_psych_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_juris_class}
+			"
+
+			data-field="viol_juris"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_juris_fieldheadercolumn}
+	{BEGIN viol_juris_fieldheader}
+	<SPAN {$viol_juris_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_juris">
+	{$label t_dossier viol_juris }	{$arrow_icon_viol_juris}
+	</SPAN>
+	{END viol_juris_fieldheader}
+{END viol_juris_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$conseq_corp_class}
+			"
+
+			data-field="conseq_corp"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN conseq_corp_fieldheadercolumn}
+	{BEGIN conseq_corp_fieldheader}
+	<SPAN {$conseq_corp_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="conseq_corp">
+	{$label t_dossier conseq_corp }	{$arrow_icon_conseq_corp}
+	</SPAN>
+	{END conseq_corp_fieldheader}
+{END conseq_corp_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$consequ_psych_class}
+			"
+
+			data-field="consequ_psych"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN consequ_psych_fieldheadercolumn}
+	{BEGIN consequ_psych_fieldheader}
+	<SPAN {$consequ_psych_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="consequ_psych">
+	{$label t_dossier consequ_psych }	{$arrow_icon_consequ_psych}
+	</SPAN>
+	{END consequ_psych_fieldheader}
+{END consequ_psych_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$conseq_enf_class}
+			"
+
+			data-field="conseq_enf"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN conseq_enf_fieldheadercolumn}
+	{BEGIN conseq_enf_fieldheader}
+	<SPAN {$conseq_enf_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="conseq_enf">
+	{$label t_dossier conseq_enf }	{$arrow_icon_conseq_enf}
+	</SPAN>
+	{END conseq_enf_fieldheader}
+{END conseq_enf_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$demand_vict_class}
+			"
+
+			data-field="demand_vict"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN demand_vict_fieldheadercolumn}
+	{BEGIN demand_vict_fieldheader}
+	<SPAN {$demand_vict_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="demand_vict">
+	{$label t_dossier demand_vict }	{$arrow_icon_demand_vict}
+	</SPAN>
+	{END demand_vict_fieldheader}
+{END demand_vict_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$svce_prop_class}
+			"
+
+			data-field="svce_prop"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN svce_prop_fieldheadercolumn}
+	{BEGIN svce_prop_fieldheader}
+	<SPAN {$svce_prop_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="svce_prop">
+	{$label t_dossier svce_prop }	{$arrow_icon_svce_prop}
+	</SPAN>
+	{END svce_prop_fieldheader}
+{END svce_prop_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ms3cellenffem_class}
+			"
+
+			data-field="ms3cellenffem"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ms3cellenffem_fieldheadercolumn}
+	{BEGIN ms3cellenffem_fieldheader}
+	<SPAN {$ms3cellenffem_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ms3cellenffem">
+	{$label t_dossier ms3cellenffem }	{$arrow_icon_ms3cellenffem}
+	</SPAN>
+	{END ms3cellenffem_fieldheader}
+{END ms3cellenffem_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ms3oblpaye_class}
+			"
+
+			data-field="ms3oblpaye"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ms3oblpaye_fieldheadercolumn}
+	{BEGIN ms3oblpaye_fieldheader}
+	<SPAN {$ms3oblpaye_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ms3oblpaye">
+	{$label t_dossier ms3oblpaye }	{$arrow_icon_ms3oblpaye}
+	</SPAN>
+	{END ms3oblpaye_fieldheader}
+{END ms3oblpaye_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ms3obstacles_class}
+			"
+
+			data-field="ms3obstacles"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ms3obstacles_fieldheadercolumn}
+	{BEGIN ms3obstacles_fieldheader}
+	<SPAN {$ms3obstacles_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ms3obstacles">
+	{$label t_dossier ms3obstacles }	{$arrow_icon_ms3obstacles}
+	</SPAN>
+	{END ms3obstacles_fieldheader}
+{END ms3obstacles_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sachcellenffem_class}
+			"
+
+			data-field="sachcellenffem"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sachcellenffem_fieldheadercolumn}
+	{BEGIN sachcellenffem_fieldheader}
+	<SPAN {$sachcellenffem_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sachcellenffem">
+	{$label t_dossier sachcellenffem }	{$arrow_icon_sachcellenffem}
+	</SPAN>
+	{END sachcellenffem_fieldheader}
+{END sachcellenffem_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sachcopyrap_class}
+			"
+
+			data-field="sachcopyrap"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sachcopyrap_fieldheadercolumn}
+	{BEGIN sachcopyrap_fieldheader}
+	<SPAN {$sachcopyrap_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sachcopyrap">
+	{$label t_dossier sachcopyrap }	{$arrow_icon_sachcopyrap}
+	</SPAN>
+	{END sachcopyrap_fieldheader}
+{END sachcopyrap_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rapporoui_class}
+			"
+
+			data-field="rapporoui"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rapporoui_fieldheadercolumn}
+	{BEGIN rapporoui_fieldheader}
+	<SPAN {$rapporoui_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rapporoui">
+	{$label t_dossier rapporoui }	{$arrow_icon_rapporoui}
+	</SPAN>
+	{END rapporoui_fieldheader}
+{END rapporoui_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$encscepublic_class}
+			"
+
+			data-field="encscepublic"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN encscepublic_fieldheadercolumn}
+	{BEGIN encscepublic_fieldheader}
+	<SPAN {$encscepublic_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="encscepublic">
+	{$label t_dossier encscepublic }	{$arrow_icon_encscepublic}
+	</SPAN>
+	{END encscepublic_fieldheader}
+{END encscepublic_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$encscpuboui_class}
+			"
+
+			data-field="encscpuboui"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN encscpuboui_fieldheadercolumn}
+	{BEGIN encscpuboui_fieldheader}
+	<SPAN {$encscpuboui_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="encscpuboui">
+	{$label t_dossier encscpuboui }	{$arrow_icon_encscpuboui}
+	</SPAN>
+	{END encscpuboui_fieldheader}
+{END encscpuboui_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$n3cellenffem_class}
+			"
+
+			data-field="n3cellenffem"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN n3cellenffem_fieldheadercolumn}
+	{BEGIN n3cellenffem_fieldheader}
+	<SPAN {$n3cellenffem_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="n3cellenffem">
+	{$label t_dossier n3cellenffem }	{$arrow_icon_n3cellenffem}
+	</SPAN>
+	{END n3cellenffem_fieldheader}
+{END n3cellenffem_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$n3pression_class}
+			"
+
+			data-field="n3pression"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN n3pression_fieldheadercolumn}
+	{BEGIN n3pression_fieldheader}
+	<SPAN {$n3pression_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="n3pression">
+	{$label t_dossier n3pression }	{$arrow_icon_n3pression}
+	</SPAN>
+	{END n3pression_fieldheader}
+{END n3pression_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$n3docs_class}
+			"
+
+			data-field="n3docs"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN n3docs_fieldheadercolumn}
+	{BEGIN n3docs_fieldheader}
+	<SPAN {$n3docs_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="n3docs">
+	{$label t_dossier n3docs }	{$arrow_icon_n3docs}
+	</SPAN>
+	{END n3docs_fieldheader}
+{END n3docs_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tribcellenffem_class}
+			"
+
+			data-field="tribcellenffem"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tribcellenffem_fieldheadercolumn}
+	{BEGIN tribcellenffem_fieldheader}
+	<SPAN {$tribcellenffem_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tribcellenffem">
+	{$label t_dossier tribcellenffem }	{$arrow_icon_tribcellenffem}
+	</SPAN>
+	{END tribcellenffem_fieldheader}
+{END tribcellenffem_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tribpression_class}
+			"
+
+			data-field="tribpression"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tribpression_fieldheadercolumn}
+	{BEGIN tribpression_fieldheader}
+	<SPAN {$tribpression_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tribpression">
+	{$label t_dossier tribpression }	{$arrow_icon_tribpression}
+	</SPAN>
+	{END tribpression_fieldheader}
+{END tribpression_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tribobligpaye_class}
+			"
+
+			data-field="tribobligpaye"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tribobligpaye_fieldheadercolumn}
+	{BEGIN tribobligpaye_fieldheader}
+	<SPAN {$tribobligpaye_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tribobligpaye">
+	{$label t_dossier tribobligpaye }	{$arrow_icon_tribobligpaye}
+	</SPAN>
+	{END tribobligpaye_fieldheader}
+{END tribobligpaye_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$remarques_class}
+			"
+
+			data-field="remarques"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN remarques_fieldheadercolumn}
+	{BEGIN remarques_fieldheader}
+	<SPAN {$remarques_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="remarques">
+	{$label t_dossier remarques }	{$arrow_icon_remarques}
+	</SPAN>
+	{END remarques_fieldheader}
+{END remarques_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+				 
+					{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$conseq_ecosocial_class}
+			"
+
+			data-field="conseq_ecosocial"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN conseq_ecosocial_fieldheadercolumn}
+	{BEGIN conseq_ecosocial_fieldheader}
+	<SPAN {$conseq_ecosocial_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="conseq_ecosocial">
+	{$label t_dossier conseq_ecosocial }	{$arrow_icon_conseq_ecosocial}
+	</SPAN>
+	{END conseq_ecosocial_fieldheader}
+{END conseq_ecosocial_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="تحرير" class="btn-link   
+	 glyphicon glyphicon-pencil" href="t_dossier_edit.php?{$editlink}" {$editlink_attrs} title="تحرير" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="عرض السجل" class="btn-link   
+	 glyphicon glyphicon-search" href="t_dossier_view.php?{$editlink}" {$viewlink_attrs} title="عرض" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$num_dossier_class}
+			"
+
+			data-field="num_dossier"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN num_dossier_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="num_dossier" data-default-width >
+{$num_dossier_value}
+</span>
+{END num_dossier_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nom_assist_class}
+			"
+
+			data-field="nom_assist"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nom_assist_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom_assist" data-default-width >
+{$nom_assist_value}
+</span>
+{END nom_assist_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$SourceInfo_class}
+			"
+
+			data-field="SourceInfo"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN SourceInfo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="SourceInfo" data-default-width >
+{$SourceInfo_value}
+</span>
+{END SourceInfo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Date_ecoute_class}
+			"
+
+			data-field="Date_ecoute"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Date_ecoute_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Date_ecoute" data-default-width >
+{$Date_ecoute_value}
+</span>
+{END Date_ecoute_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vcin_class}
+			"
+
+			data-field="vcin"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vcin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vcin" data-default-width >
+{$vcin_value}
+</span>
+{END vcin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$victime_class}
+			"
+
+			data-field="victime"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN victime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="victime" data-default-width >
+{$victime_value}
+</span>
+{END victime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$coupable_class}
+			"
+
+			data-field="coupable"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN coupable_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="coupable" data-default-width >
+{$coupable_value}
+</span>
+{END coupable_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rel_coup_victime_class}
+			"
+
+			data-field="rel_coup_victime"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rel_coup_victime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rel_coup_victime" data-default-width >
+{$rel_coup_victime_value}
+</span>
+{END rel_coup_victime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$date_viol_class}
+			"
+
+			data-field="date_viol"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN date_viol_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="date_viol" data-default-width >
+{$date_viol_value}
+</span>
+{END date_viol_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_eco_class}
+			"
+
+			data-field="viol_eco"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_eco_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_eco" data-default-width >
+{$viol_eco_value}
+</span>
+{END viol_eco_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_corp_class}
+			"
+
+			data-field="viol_corp"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_corp_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_corp" data-default-width >
+{$viol_corp_value}
+</span>
+{END viol_corp_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_sexuel_class}
+			"
+
+			data-field="viol_sexuel"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_sexuel_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_sexuel" data-default-width >
+{$viol_sexuel_value}
+</span>
+{END viol_sexuel_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_psych_class}
+			"
+
+			data-field="viol_psych"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_psych_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_psych" data-default-width >
+{$viol_psych_value}
+</span>
+{END viol_psych_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$viol_juris_class}
+			"
+
+			data-field="viol_juris"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN viol_juris_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="viol_juris" data-default-width >
+{$viol_juris_value}
+</span>
+{END viol_juris_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$conseq_corp_class}
+			"
+
+			data-field="conseq_corp"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN conseq_corp_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="conseq_corp" data-default-width >
+{$conseq_corp_value}
+</span>
+{END conseq_corp_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$consequ_psych_class}
+			"
+
+			data-field="consequ_psych"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN consequ_psych_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="consequ_psych" data-default-width >
+{$consequ_psych_value}
+</span>
+{END consequ_psych_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$conseq_enf_class}
+			"
+
+			data-field="conseq_enf"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN conseq_enf_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="conseq_enf" data-default-width >
+{$conseq_enf_value}
+</span>
+{END conseq_enf_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$demand_vict_class}
+			"
+
+			data-field="demand_vict"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN demand_vict_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="demand_vict" data-default-width >
+{$demand_vict_value}
+</span>
+{END demand_vict_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$svce_prop_class}
+			"
+
+			data-field="svce_prop"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN svce_prop_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="svce_prop" data-default-width >
+{$svce_prop_value}
+</span>
+{END svce_prop_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ms3cellenffem_class}
+			"
+
+			data-field="ms3cellenffem"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ms3cellenffem_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ms3cellenffem" data-default-width >
+{$ms3cellenffem_value}
+</span>
+{END ms3cellenffem_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ms3oblpaye_class}
+			"
+
+			data-field="ms3oblpaye"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ms3oblpaye_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ms3oblpaye" data-default-width >
+{$ms3oblpaye_value}
+</span>
+{END ms3oblpaye_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ms3obstacles_class}
+			"
+
+			data-field="ms3obstacles"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ms3obstacles_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ms3obstacles" data-default-width >
+{$ms3obstacles_value}
+</span>
+{END ms3obstacles_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sachcellenffem_class}
+			"
+
+			data-field="sachcellenffem"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sachcellenffem_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sachcellenffem" data-default-width >
+{$sachcellenffem_value}
+</span>
+{END sachcellenffem_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sachcopyrap_class}
+			"
+
+			data-field="sachcopyrap"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sachcopyrap_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sachcopyrap" data-default-width >
+{$sachcopyrap_value}
+</span>
+{END sachcopyrap_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$rapporoui_class}
+			"
+
+			data-field="rapporoui"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN rapporoui_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="rapporoui" data-default-width >
+{$rapporoui_value}
+</span>
+{END rapporoui_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$encscepublic_class}
+			"
+
+			data-field="encscepublic"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN encscepublic_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="encscepublic" data-default-width >
+{$encscepublic_value}
+</span>
+{END encscepublic_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$encscpuboui_class}
+			"
+
+			data-field="encscpuboui"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN encscpuboui_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="encscpuboui" data-default-width >
+{$encscpuboui_value}
+</span>
+{END encscpuboui_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$n3cellenffem_class}
+			"
+
+			data-field="n3cellenffem"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN n3cellenffem_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="n3cellenffem" data-default-width >
+{$n3cellenffem_value}
+</span>
+{END n3cellenffem_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$n3pression_class}
+			"
+
+			data-field="n3pression"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN n3pression_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="n3pression" data-default-width >
+{$n3pression_value}
+</span>
+{END n3pression_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$n3docs_class}
+			"
+
+			data-field="n3docs"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN n3docs_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="n3docs" data-default-width >
+{$n3docs_value}
+</span>
+{END n3docs_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tribcellenffem_class}
+			"
+
+			data-field="tribcellenffem"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tribcellenffem_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tribcellenffem" data-default-width >
+{$tribcellenffem_value}
+</span>
+{END tribcellenffem_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tribpression_class}
+			"
+
+			data-field="tribpression"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tribpression_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tribpression" data-default-width >
+{$tribpression_value}
+</span>
+{END tribpression_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tribobligpaye_class}
+			"
+
+			data-field="tribobligpaye"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tribobligpaye_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tribobligpaye" data-default-width >
+{$tribobligpaye_value}
+</span>
+{END tribobligpaye_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$remarques_class}
+			"
+
+			data-field="remarques"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN remarques_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="remarques" data-default-width >
+{$remarques_value}
+</span>
+{END remarques_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+				 
+					{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$conseq_ecosocial_class}
+			"
+
+			data-field="conseq_ecosocial"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN conseq_ecosocial_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="conseq_ecosocial" data-default-width >
+{$conseq_ecosocial_value}
+</span>
+{END conseq_ecosocial_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+				 
+					{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="t_dossier_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+		</div>
+	{END body}
+	</body>
+</html>
