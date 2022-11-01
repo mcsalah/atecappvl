@@ -27,5 +27,7 @@ RUN set -x \
     && a2enmod actions proxy proxy_fcgi ssl rewrite headers expires \
     && docker-run-bootstrap \
     && docker-image-cleanup
-
+RUN apt-get install git
+RUN cd /app \
+    && git clone https://github.com/mcsalah/atecappvl.git
 EXPOSE 80 443
