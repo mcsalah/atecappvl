@@ -4,7 +4,7 @@ include\phpfunctions.php include\phpfunctions.php
 plugins\facebook\facebook.php plugins\facebook\facebook.php
 plugins\facebook\base_facebook.php plugins\facebook\base_facebook.php
 plugins\facebook\fb_ca_chain_bundle.crt plugins\facebook\fb_ca_chain_bundle.crt
-##endif##
+##endif endif##
 
 plugins\google-api-php-client plugins\google-api-php-client
 
