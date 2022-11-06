@@ -17,7 +17,7 @@ pipeline {
         stage ('build image') {
             steps {
                   
-             sh 'docker build atec .'
+             sh 'docker build -t atec .'
              sh 'docker images'   
             }
         }   
