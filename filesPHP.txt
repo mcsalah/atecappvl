@@ -1,6 +1,6 @@
 include\phpfunctions.php include\phpfunctions.php
 
-##if (@BUILDER.bCreateLoginPage && @BUILDER.m_nLoginMethod==SECURITY_TABLE && @BUILDER.bFacebookLogin)##
+##if (@BUILDER.bCreateLoginPage && @BUILDER.m_nLoginMethod==SECURITY_TABLE && @BUILDER.bFacebookLogin) test##
 plugins\facebook\facebook.php plugins\facebook\facebook.php
 plugins\facebook\base_facebook.php plugins\facebook\base_facebook.php
 plugins\facebook\fb_ca_chain_bundle.crt plugins\facebook\fb_ca_chain_bundle.crt
