@@ -26,6 +26,7 @@ pipeline {
              sh 'docker rmi atec.${BUILD_ID}-1'
                
             }
+          }
         }   
     }
 }
