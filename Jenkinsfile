@@ -1,5 +1,6 @@
 pipeline {
     agent { label 'linux' }
+    
    
     stages {
         stage('copy from git') {
@@ -12,5 +13,11 @@ pipeline {
                 
             }
         }
+        stage ('report') {
+            steps {
+                  
+             echo ${BUILD_ID}
+            }
+        }   
     }
 }
