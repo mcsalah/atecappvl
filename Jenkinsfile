@@ -8,7 +8,7 @@ pipeline {
                  sh 'rm -rf atecappvl'
                  echo 'copy from github'
                  sh 'git clone https://github.com/mcsalah/atecappvl.git'
-                 sh 'cp -R atecappvl /var/www/html'
+                 sh 'cp -R atecappvl."${BUILD_ID}" /var/www/html'
 
                 
             }
