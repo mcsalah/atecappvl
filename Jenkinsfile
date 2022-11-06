@@ -20,6 +20,12 @@ pipeline {
              sh 'docker build -t atec.${BUILD_ID} .'
              sh 'docker images'   
             }
+        stage ('cleane previous image') {
+            steps {
+                  
+             sh 'docker rmi atec.${BUILD_ID}-1'
+               
+            }
         }   
     }
 }
