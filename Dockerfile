@@ -1,6 +1,6 @@
 #+++++++++++++++++++++++++++++++++++++++
 # Dockerfile for webdevops/php-apache:ubuntu-18.04
-#    -- by salaheddine --
+#    -- salaheddine --
 #+++++++++++++++++++++++++++++++++++++++
 
 FROM webdevops/php:ubuntu-18.04
