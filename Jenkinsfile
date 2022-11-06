@@ -14,10 +14,11 @@ pipeline {
                 
             }
         }
-        stage ('report') {
+        stage ('build image') {
             steps {
                   
-             echo "${BUILD_ID}"
+             sh 'docker build .'
+             sh 'docker images'   
             }
         }   
     }
