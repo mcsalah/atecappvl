@@ -16,7 +16,7 @@ pipeline {
         stage ('report') {
             steps {
                   
-             echo ${BUILD_ID}
+             echo "${BUILD_ID}"
             }
         }   
     }
