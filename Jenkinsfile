@@ -19,13 +19,7 @@ pipeline {
              sh 'docker images'   
             }
         }
-        stage ('cleane previous image') {
-            steps {
-                  
-             sh 'docker rmi atec.${BUILD_ID}-1'
-               
-            }
-          }
+        
         stage('Report') {
             steps {
                 echo "This stage generates a report"
