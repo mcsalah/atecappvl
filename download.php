@@ -1,6 +1,6 @@
 <?php
 /**
- * not used anymore
+ * n'est plus utilis&
  */
 exit();
 
