@@ -23,7 +23,6 @@ pipeline {
         stage('Report') {
             steps {
                 echo "This stage generates a report"
-                sh "printf \"This is the change log.\" > report.txt"
                 archiveArtifacts allowEmptyArchive: true, 
                     artifacts: '*.txt', 
                     fingerprint: true, 
