@@ -8,7 +8,7 @@ require_once('classes/loginpage.php');
 add_nocache_headers();
 
 
-
+echo "test deploy";
 
 
 $xt = new Xtempl();
