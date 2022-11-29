@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rgtftest" {
-  name     = "testtf"
+  name     = "rgtfdevops"
   location = "east us"
   tags = {
         envirennement = "dev"
