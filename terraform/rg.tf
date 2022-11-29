@@ -15,3 +15,4 @@ resource "azurerm_storage_account" "staccvtf" {
   tags = {
     environment = "staging"
   }
+}
