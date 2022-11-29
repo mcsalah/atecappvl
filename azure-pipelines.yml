@@ -46,11 +46,11 @@ stages:
           command: 'plan'
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceName: 'terraform-aks-azurerm-svc-con'
-          commandOptions: '$(Pipeline.Workspace)/terraform-manifests-out/$(DEV_ENVIRONMENT)-$(Build.BuildId).out'
+          commandOptions: '$(Pipeline.Workspace)/terraform-out/$(DEV_ENVIRONMENT)-$(Build.BuildId).out'
           allowTelemetryCollection: false
       - task: TerraformCLI@0
         inputs:
           command: 'apply'
-          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceName: 'terraform-aks-azurerm-svc-con'
           allowTelemetryCollection: false
