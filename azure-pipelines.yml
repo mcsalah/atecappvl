@@ -46,7 +46,6 @@ stages:
           command: 'plan'
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           environmentServiceName: 'terraform-aks-azurerm-svc-con'
-          commandOptions: '$(Pipeline.Workspace)/terraform-out/$(DEV_ENVIRONMENT)-$(Build.BuildId).out'
           allowTelemetryCollection: false
       - task: TerraformCLI@0
         inputs:
