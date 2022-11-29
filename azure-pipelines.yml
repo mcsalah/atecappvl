@@ -24,12 +24,12 @@ stages:
         displayName: Terraform Init
         inputs:
           command: 'init'
-          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
           backendType: 'azurerm'
           backendServiceArm: 'terraform-aks-azurerm-svc-con'
           ensureBackend: true
           backendAzureRmResourceGroupName: 'test'
-          backendAzureRmStorageAccountName: 'atectfstrg'
+          backendAzureRmStorageAccountName: 'restoratec'
           backendAzureRmStorageAccountSku: 'Standard_RALRS'
           backendAzureRmContainerName: 'tfstatefiles'
           backendAzureRmKey: 'aks-base.tfstate'
