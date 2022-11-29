@@ -29,7 +29,7 @@ stages:
           backendServiceArm: 'terraform-aks-azurerm-svc-con'
           ensureBackend: true
           backendAzureRmResourceGroupName: 'test'
-          backendAzureRmStorageAccountName: 'restoratec'
+          backendAzureRmStorageAccountName: 'restoratec2'
           backendAzureRmStorageAccountSku: 'Standard_LRS'
           backendAzureRmContainerName: 'tfstatefiles'
           backendAzureRmKey: 'aks-base.tfstate'
