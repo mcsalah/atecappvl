@@ -13,7 +13,7 @@ stages:
       - task: PublishPipelineArtifact@1
         displayName: Publish Artifacts
         inputs:
-          targetPath: '$(System.DefaultWorkingDirectory)/terraform-manifests'
+          targetPath: '$(System.DefaultWorkingDirectory)/terraform'
           artifact: 'terraform-manifests-out'
           publishLocation: 'pipeline'
       - task: TerraformInstaller@0
@@ -40,7 +40,14 @@ stages:
         inputs:
           command: 'validate'
           workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
-          allowTelemetryCollection: false       
+          allowTelemetryCollection: false   
+      - task: TerraformCLI@0
+        inputs:
+          command: 'plan'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/terraform'
+          environmentServiceName: 'terraform-aks-azurerm-svc-con'
+          commandOptions: '$(Pipeline.Workspace)/terraform-manifests-out/$(DEV_ENVIRONMENT)-$(Build.BuildId).out'
+          allowTelemetryCollection: false
       - task: TerraformCLI@0
         inputs:
           command: 'apply'
