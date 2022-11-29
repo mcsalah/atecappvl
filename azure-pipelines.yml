@@ -30,7 +30,7 @@ stages:
           ensureBackend: true
           backendAzureRmResourceGroupName: 'test'
           backendAzureRmStorageAccountName: 'restoratec'
-          backendAzureRmStorageAccountSku: 'Standard_RALRS'
+          backendAzureRmStorageAccountSku: 'Standard_LRS'
           backendAzureRmContainerName: 'tfstatefiles'
           backendAzureRmKey: 'aks-base.tfstate'
           allowTelemetryCollection: false
