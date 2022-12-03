@@ -28,7 +28,7 @@ RUN set -x \
     && docker-run-bootstrap \
     && docker-image-cleanup
 RUN apt-get install git
-RUN cd /app \
- && copy . .
+RUN cd /app
+COPY  . .
  # && git clone https://github.com/mcsalah/atecappvl.git
 EXPOSE 80 443
